@@ -17,7 +17,7 @@
 <body>
   <div class="container my-5">
     <h1 class="text-center mb-4" id="head-tilte"> <i class="fa-regular fa-clipboard mx-4"></i> RESERVATION</h1>
-    <form id="form-section">
+    <form id="form-section" action="#">
       <!-- Check-in and Check-out -->
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -246,18 +246,44 @@
         </div>
       </div>
 
+      <div class="alert alert-success d-none" role="alert">
+        Your information was sent successfully!
+      </div>
+      <div class="alert alert-danger d-none" role="alert">
+        Please enter complete information in the required fields
+      </div>
+      
       <div class="col text-center">
         <button type="submit" class="btn text-center">Send</button>      
       </div>
         
     </form>
-    </div>
   </div>
 
   <footer>
 
   </footer>
 
+  <script>
+    const buttonSubmit = document.querySelector("button[type=submit]")
+    const formControl = document.querySelectorAll("input[required]")
+    const formControlArray = Array.from(formControl)
+    
+
+    buttonSubmit.addEventListener("click", (e) => {
+      const checkValid = formControlArray.some(input => input.value == "")
+      const alertSuccess = document.querySelector(".alert-success")
+      const alertFail = document.querySelector(".alert-danger")
+      
+      if(checkValid){
+        alertSuccess.classList.add("d-none")
+        alertFail.classList.remove("d-none")
+      }else{
+        alertFail.classList.add("d-none")
+        alertSuccess.classList.remove("d-none")
+      }
+    })
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
