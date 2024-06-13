@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+
+.main-box {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
+    text-align: center;
+}
+.titletren {
+    padding-top: 34px;
+
+}
+.titletren p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #DF6951;
+}
+.titletren h3 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #181E4B;
+}
+.box3 {
+    display: flex;
+    padding-left: 31.575px;
+}
+.box {
+    width: 30%;
+    border-radius: 18px 18px 18px 18px;
+    margin-right: 33.575px;
+}
+.box img{
+    padding-top: 20px;
+    width: 142px;
+    height: 159px;
+    margin-bottom: 20px;
+}
+.box h2{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1E1D4C;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.box p {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #5E6282;
+}
+.box:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+}
+.duoi {
+    margin-top: 40px;
+    display: flex;
+}
+.phai{
+    width: 45%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-left: 38px;
+}
+input[type="text"] {
+    background: #FFFFFF;
+    width: 350px;
+    height: 80.73px;
+    margin-bottom: 20px;
+    border: none;
+}
+/* input[type="email"] {
+    background: #FFFFFF;
+    width: 350px;
+    height: 80.73px;
+    margin-bottom: 20px;
+    border: none; }*/
+
+input[type="text"]::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.26);
+    padding-left: 15px;
+}
+.duoi h3 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #181E4B;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.phai p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+input[type="text"]:focus {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.701);
+    padding-left: 15px;
+    outline: none;
+}
+input[type="text"]:not(:focus) {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.701);
+    padding-left: 15px;
+}
+.phai button {
+    width: 217.68px;
+    height: 59.93px;
+    background: #DF6951;
+    box-shadow: 0px 20px 35px rgba(223, 105, 81, 0.15);
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.7159px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+button:hover {
+    background-color:#d34d32; 
+  }
+
+#message {
+    background: #FFFFFF;
+    width: 350px;
+    height: 170.73px;
+    margin-bottom: 20px;
+    border: none;
+}
+#message::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    /* line-height: 26px; */
+    color: rgba(0, 0, 0, 0.26);
+    padding-left: 15px;
+    position: absolute;
+    top: 20px;
+}
+#message:focus{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    /* line-height: 26px; */
+    color: rgba(0, 0, 0, 0.701);
+    padding-left: 15px;
+    /* position: absolute;
+    top: 20px; */
+    padding-bottom: 110px;
+}
+#message:not(:focus){
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    /* line-height: 26px; */
+    color: rgba(0, 0, 0, 0.701);
+    padding-left: 15px;
+    /* position: absolute;
+    top: 20px; */
+    padding-bottom: 110px;
+}
+.trai{
+    width: 45%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-left: 30px;
+}
+.trai p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    /* line-height: 26px; */
+    /* text-align: center; */
+    color: #000000;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+iframe{
+    margin-top: 50px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    margin-top: 50px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+.header img {
+    width: 10% ;
+}
+.titletren {
+    position: absolute; 
+    width: 311px;
+    height: 112px;
+    left: 816px;
+    top: 800px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+.titletren p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #DF6951;
+} */
+
+
+
+
+/* .box3 {
+    width: 1199px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+} */
