@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins';
+    }
+
+    i {
+      color: #FFBA0A;
+      margin-right: .5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-back {
+      border: 1px solid #DF6951;
+      color: #DF6951;
+      padding: .4rem 4rem;
+      font-weight: 600;
+    }
+
+    .btn-back i {
+      color: #DF6951;
+    }
+
+    .btn-back:hover {
+      color: white;
+      background-color: #DF6951;
+    }
+
+    .btn-back:hover i {
+      color: white;
+    }
+
+    .destination-info h1 {
+      font-size: 3rem;
+      font-family: 'Volkhov';
+      font-weight: 600;
+      color: #181E4B;
+    }
+
+    .destination-info .price {
+      color: #DF6951;
+      font-size: 1.5rem;
+    }
+
+    .destination-info p {
+      font-size: 0.9rem;
+    }
+
+    .detail-list {
+      margin-top: 1rem;
+      padding: 0;
+      ;
+      font-size: 0.9rem;
+    }
+
+    .detail-list li {
+      display: flex;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .detail-list li span:first-child {
+      color: #DF6951;
+      width: 25%;
+      display: inline-block;
+      font-weight: bolder;
+    }
+
+    .detail-list li span:last-child {
+      width: 75%;
+      display: inline-block;
+    }
+
+    .image-zoom {
+      width: 100%;
+      height: 370px;
+      overflow: hidden;
+    }
+
+    .image-zoom img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .image-zoom:hover img {
+      transform: scale(1.1);
+    }
+
+    .btn-book {
+      background-color: #DF6951;
+      color: white;
+    }
+
+    .btn-book:hover {
+      color: white;
+    }
+
+    .gallery {
+      margin: 2.2rem 0;
+    }
+
+    .gallery h2 {
+      font-family: 'Volkhov';
+      font-weight: 600;
+      color: #181E4B;
+    }
+
+    .inner-image {
+      width: 100%;
+      height: 198px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .inner-image img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .inner-image:hover img{
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container p-4 my-5">
+    <div class="mb-3">
+      <a href="destination.html" class="btn btn-back"><i class="fa-solid fa-arrow-left"></i>Back</a>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <!-- Information -->
+        <div class="destination-info">
+          <h1>Switzerland</h1>
+          <span class="price">$1,000 / Person</span>
+          <span class="d-block mt-2 rating"><i class="fa-solid fa-star"></i>5.0</span>
+          <p class=" my-4 description">Warsaw, the capital city, is a vibrant metropolis with a mix of modern
+            skyscrapers and meticulously reconstructed historical landmarks, symbolizing the nation's resilience.</p>
+        </div>
+        <ul class="detail-list row">
+          <li class="col-sm-12">
+            <span class="col-sm-4">Destination</span>
+            <span class="col-sm-8">: Zurich, Switzerland</span>
+          </li>
+          <li class="col-sm-12">
+            <span class="col-sm-4">Attractions</span>
+            <span class="col-sm-8">: Rijksmuseum, Anne Frank House</span>
+          </li>
+          <li class="col-sm-12">
+            <span class="col-sm-4">Common Foods</span>
+            <span class="col-sm-8">: Stroopwafel, Poffertjes, Herring</span>
+          </li>
+          <li class="col-sm-12">
+            <span class="col-sm-4">Estimated Cost</span>
+            <span class="col-sm-8">: 4000$ / 1 Person</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-5 main-image">
+        <div class="image-zoom">
+          <img src="https://images.unsplash.com/photo-1607078486875-a697a8a38e87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Fyc2F3fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="reservation.html" class="btn btn-book px-4">Book now!</a>
+      </div>
+
+      <!-- Gallery -->
+      <div class="col-12 gallery">
+        <h2>From our gallery</h2>
+        <div class="row mt-4 gallery-pictures">
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="inner-image">
+              <img src="./assets/images/image.avif" alt="Scenery">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
