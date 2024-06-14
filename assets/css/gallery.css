@@ -106,10 +106,132 @@ button:hover {
     color: #FFFFFF;
     position: relative;
     top: -330px;
-    left: 420px;
+    left: 440px;
     width: 700px;
 }
 .imggirl img{
     width: 1518px;
     height: auto;
 }
+.gioithieu1 h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #DF6951;
+}
+.gioithieu1 h5 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #181E4B;
+}
+.gioithieu1 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 26px;
+    text-align: center;
+    color: #000000; 
+}
+.gioithieu1 {
+    display: flex;
+    padding-bottom: 560px;
+}
+.anhgt {
+    position: absolute;
+    top: -150px;
+}
+.textleft {
+    position: absolute;
+    left: 700px;
+    top: -30px;
+}
+.textleft img {
+    padding-top: 30px;
+    position: absolute;
+    left: 50px;
+    
+}
+.anhgt {
+    transition: transform 0.5s ease-in-out; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+.anhgt:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột qua 10% */
+  }
+  
+.imggirl p {
+    transition: transform 0.5s ease-in-out; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+.imggirl p:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột qua 10% */
+ }
+ .anhleft {
+    transition: transform 0.5s ease-in-out; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+.anhleft:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột qua 10% */
+ }
+ .gallerymain h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #DF6951;
+    text-align: center;
+ }
+ .gallerymain p{
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #181E4B;
+    text-align: center;
+ }
+ .anh {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 60px;
+ }
+ .anh img {
+    width: 300px;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+ }
+ .anh .imgsp {
+    width: 330px;
+    height: 725px;
+ }
+ .hang3 {
+    padding-right: 10px;
+ }
+ .hang4 {
+    margin-left: 30px;
+ }
+ .hang1 {
+    margin-right: 40px;
+ }
+ .hang2 {
+    margin-right:25px ;
+ }
+ .anh .imgsp1 {
+    width: 330px;
+    height: 350px;
+ }
+ .anh img {
+    transition: transform 0.5s ease-in-out; /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  
+.anh img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột qua 10% */
+ }
