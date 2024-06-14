@@ -95,6 +95,7 @@ body{
     height: auto;
     background-color: rgba(128, 128, 128, 0.2);
     margin-left: 38px;
+    margin-bottom: 50px;
 }
 input[type="text"] {
     background: #FFFFFF;
@@ -174,7 +175,7 @@ input[type="text"]:not(:focus) {
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 button:hover {
     background-color:#d34d32; 
@@ -227,6 +228,7 @@ button:hover {
     height: auto;
     background-color: rgba(128, 128, 128, 0.2);
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 .trai p {
     font-family: "Poppins", sans-serif;
@@ -241,6 +243,7 @@ button:hover {
 }
 iframe{
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .footer{
     width: 100%;
