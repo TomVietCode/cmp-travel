@@ -6,14 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reservation</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed|Yesteryear">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/reservation.css">
+  <link rel="stylesheet" href="./assets/css/homepage.css">
 </head>
 
-<header>
+<style>
+  .header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    z-index: 1;
+  }
 
+  #explore{
+    color: #FFEFEC;
+    text-align: center;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    position: relative;
+    top: 20px;
+  }
+
+  #landscapes{
+    color: #FFEFEC;
+    font-family: "Yesteryear";
+    font-size: 7rem;
+  }
+
+  #current{
+    transform: scale(1.1);
+    font-weight: 700;
+  }
+  
+  #current::after{
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -7px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+</style>
+
+<header class="header" style="background-image: url('./assets/images/destination-background.png'); height: 70vh;">
+  <div class="overlay"></div>
+  <div class="header-text">
+    <div id="explore">EXPLORE</div>
+    <div id="landscapes">Landscapes</div>
+  </div>
+  <div class="nav-top-bar">
+    <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt="" id="logo" /></a>
+    <div class="nav-bar">
+      <ul>
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li class="active"><a href="#">About Us</a></li>
+        <li><a href="#" id="current" style="color: #ff6600;">Tour</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="#">Blog</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
+
 <body>
   <div class="container my-5">
     <h1 class="text-center mb-4" id="head-tilte"> <i class="fa-regular fa-clipboard mx-4"></i> RESERVATION</h1>

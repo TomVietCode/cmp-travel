@@ -15,6 +15,9 @@ i {
   background: white;
   padding: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: relative;
+  top: -100px;
 }
 
 .sort-option {
@@ -96,18 +99,10 @@ i {
   border-top-right-radius: 20px;
 }
 
-.badge-custom {
-  background-color: #ff6f61;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
 .page-button{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #ff6f61;
   display: flex;
   justify-content: center;
   align-items: center;
