@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   var objectLocation = data.find((obj) => obj.id == cardId);
   // console.log(objectLocation)
 
+  document.title = `${objectLocation.name}`
+  
   const container = document.querySelector(".container");
   const row = document.querySelector(".row");
 

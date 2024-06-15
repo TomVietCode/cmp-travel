@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   displayPage(data, 1);
-  createPagination(totalPages);
+  createPagination(totalPages, data);
 
   // Sort
   const buttonsSort = document.querySelectorAll(".btn-sort");
@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     button.addEventListener("click", () => {
       let sortedArr = data;
       const buttonClass = button.classList;
+
       if (buttonClass.contains("low-to-high")) {
         sortedArr = lowToHigh([...data]);
       } else if (buttonClass.contains("high-to-low")) {
