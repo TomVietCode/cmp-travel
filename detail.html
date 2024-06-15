@@ -111,6 +111,7 @@
     }
 
     .btn-book:hover {
+      background-color:#d34d32;
       color: white;
     }
 
@@ -127,13 +128,15 @@
     .inner-image {
       width: 100%;
       height: 198px;
+      object-fit: cover;
       overflow: hidden;
       border-radius: 5px;
     }
 
     .inner-image img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       transition: transform 0.3s ease;
     }
 
@@ -145,85 +148,25 @@
 
 <body>
   <div class="container p-4 my-5">
-    <div class="mb-3">
-      <a href="destination.html" class="btn btn-back"><i class="fa-solid fa-arrow-left"></i>Back</a>
-    </div>
     <div class="row">
       <div class="col-7">
         <!-- Information -->
         <div class="destination-info">
-          <h1>Switzerland</h1>
-          <span class="price">$1,000 / Person</span>
-          <span class="d-block mt-2 rating"><i class="fa-solid fa-star"></i>5.0</span>
-          <p class=" my-4 description">Warsaw, the capital city, is a vibrant metropolis with a mix of modern
-            skyscrapers and meticulously reconstructed historical landmarks, symbolizing the nation's resilience.</p>
         </div>
         <ul class="detail-list row">
-          <li class="col-sm-12">
-            <span class="col-sm-4">Destination</span>
-            <span class="col-sm-8">: Zurich, Switzerland</span>
-          </li>
-          <li class="col-sm-12">
-            <span class="col-sm-4">Attractions</span>
-            <span class="col-sm-8">: Rijksmuseum, Anne Frank House</span>
-          </li>
-          <li class="col-sm-12">
-            <span class="col-sm-4">Common Foods</span>
-            <span class="col-sm-8">: Stroopwafel, Poffertjes, Herring</span>
-          </li>
-          <li class="col-sm-12">
-            <span class="col-sm-4">Estimated Cost</span>
-            <span class="col-sm-8">: 4000$ / 1 Person</span>
-          </li>
         </ul>
       </div>
       <div class="col-5 main-image">
-        <div class="image-zoom">
-          <img src="https://images.unsplash.com/photo-1607078486875-a697a8a38e87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Fyc2F3fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
-        </div>
-      </div>
-      <div class="col-12">
-        <a href="reservation.html" class="btn btn-book px-4">Book now!</a>
       </div>
 
       <!-- Gallery -->
-      <div class="col-12 gallery">
+      <div class="col-12 px-0 gallery">
         <h2>From our gallery</h2>
         <div class="row mt-4 gallery-pictures">
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-          <div class="col-4 mb-4">
-            <div class="inner-image">
-              <img src="./assets/images/image.avif" alt="Scenery">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+
+  <script src="./assets/js/detail.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
