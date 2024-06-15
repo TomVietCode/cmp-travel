@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const img = document.createElement("img");
         img.src = destination.img;
         img.classList.add("card-img-top");
-        
+
         const cardBody = document.createElement("div");
         cardBody.classList.add("card-body");
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       container.appendChild(row);
     }
-  }
+  };
 
   // Pagination
   const createPagination = (totalPages, data) => {
@@ -102,29 +102,25 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
       paginationContainer.appendChild(pageButton);
     }
-  }
+  };
 
   displayPage(data, 1);
   createPagination(totalPages);
 
   // Sort
-  const lowToHighButton = document.querySelector(".low-to-high")
-  const highToLowButton = document.querySelector(".high-to-low")
-  const nameButton = document.querySelector(".name")
-  const rateButton = document.querySelector(".rate")
-  const resetButton = document.querySelector(".reset")
+  const buttonsSort = document.querySelectorAll(".btn-sort");
 
   // Sort price low to high
   const lowToHigh = (data) => {
-    return data.sort((a,b) => a.estimatedCost - b.estimatedCost)
-  }
+    return data.sort((a, b) => a.estimatedCost - b.estimatedCost);
+  };
   // Sort price low to high
   const highToLow = (data) => {
-    return data.sort((a,b) => b.estimatedCost - a.estimatedCost)
-  }
+    return data.sort((a, b) => b.estimatedCost - a.estimatedCost);
+  };
   // Sort by name
   const sortByName = (data) => {
-    return data.sort((a,b) => {
+    return data.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
@@ -133,43 +129,29 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
       return 0;
     });
-  }
+  };
   //Sort by rate
   const sortByRate = (data) => {
-    return data.sort((a,b) => b.rating - a.rating)
-  }
+    return data.sort((a, b) => b.rating - a.rating);
+  };
 
-  lowToHighButton.addEventListener("click", () => {
-     const sortedArr = lowToHigh([...data])
-     console.log(data)
-     displayPage(sortedArr, 1)
-     createPagination(totalPages, sortedArr)
-  })
-  
-  highToLowButton.addEventListener("click", () => {
-     const sortedArr = highToLow([...data])
-    //  console.log(sortedArr)
-     displayPage(sortedArr, 1)
-     createPagination(totalPages, sortedArr)
-  })
+  // Add even click to button
+  buttonsSort.forEach((button) => {
+    button.addEventListener("click", () => {
+      let sortedArr = data;
+      const buttonClass = button.classList;
+      if (buttonClass.contains("low-to-high")) {
+        sortedArr = lowToHigh([...data]);
+      } else if (buttonClass.contains("high-to-low")) {
+        sortedArr = highToLow([...data]);
+      } else if (buttonClass.contains("name")) {
+        sortedArr = sortByName([...data]);
+      } else if (buttonClass.contains("rate")) {
+        sortedArr = sortByRate([...data]);
+      }
 
-  nameButton.addEventListener("click", () => {
-    const sortedArr = sortByName([...data])
-    // console.log(sortedArr)
-    console.log(data)
-    displayPage(sortedArr, 1)
-    createPagination(totalPages, sortedArr)
-  })
-
-  rateButton.addEventListener("click", () => {
-    const sortedArr = sortByRate([...data])
-    // console.log(sortedArr)
-    displayPage(sortedArr, 1)
-    createPagination(totalPages, sortedArr)
-  })
-
-  resetButton.addEventListener("click", () => {
-    displayPage(data, 1)
-    createPagination(totalPages, data)
-  })
+      displayPage(sortedArr, 1);
+      createPagination(totalPages, sortedArr);
+    });
+  });
 });
