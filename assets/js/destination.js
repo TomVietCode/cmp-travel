@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Sort
   const buttonsSort = document.querySelectorAll(".btn-sort");
-
+  
   // Sort price low to high
   const lowToHigh = (data) => {
     return data.sort((a, b) => a.estimatedCost - b.estimatedCost);
@@ -135,9 +135,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     return data.sort((a, b) => b.rating - a.rating);
   };
 
+  
   // Add even click to button
   buttonsSort.forEach((button) => {
     button.addEventListener("click", () => {
+      buttonsSort.forEach(btn => btn.classList.remove("selected"))
+      button.classList.add("selected")
+
       let sortedArr = data;
       const buttonClass = button.classList;
 

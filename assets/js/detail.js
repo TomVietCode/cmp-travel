@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
     const data = await response.json();
     const listImages = data.results
+    console.log(response)
 
     // console.log(listImages)
     const gallery = document.querySelector(".gallery")
