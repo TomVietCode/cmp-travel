@@ -1,6 +1,54 @@
 
 [
   {
+    "name": "Maldives",
+    "country": "Maldives",
+    "description": "The Maldives is a tropical paradise renowned for its luxurious resorts, and vibrant marine life, making it a top destination for beach lovers and divers.",
+    "attractions": [
+      "Male",
+      "Ari Atoll  ",
+      "Bioluminescent Beaches"
+    ],
+    "estimatedCost": "5000",
+    "rating": "4.9",
+    "activity": [
+      "Snorkeling",
+      "Scuba Diving",
+      "Sandbank Picnic"
+    ],
+    "food": [
+      "Mas Huni",
+      "Garudhiya",
+      "Bis Keemiya"
+    ],
+    "id": "35",
+    "img": "https://images.unsplash.com/photo-1543731068-7e0f5beff43a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHwxfHxtYWxkaXZlc3xlbnwwfDB8fHwxNzE4NjE0Mzg3fDA&ixlib=rb-4.0.3&q=80&w=1080"
+  },
+  {
+    "name": "Lauterbrunnen",
+    "country": "Switzerland",
+    "description": "Amsterdam is the capital of the Netherlands, known for its picturesque canals, historic architecture, and vibrant cultural scene.",
+    "attractions": [
+      "Staubbach Falls",
+      "Lauterbrunnen Valley",
+      "Trümmelbach Falls"
+    ],
+    "estimatedCost": "5500",
+    "rating": "4.6",
+    "activity": [
+      "Cable Car Rides",
+      "Waterfalls Tour",
+      "Mountain Biking"
+    ],
+    "food": [
+      "Swiss Fondue",
+      "Raclette",
+      "Hot Chocolate"
+    ],
+    "id": "36",
+    "img": "https://images.unsplash.com/photo-1559754417-c1304ca2f80f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHwxOXx8TGF1dGVyYnJ1bm5lbnxlbnwwfDB8fHwxNzE4NjE1NTQ3fDA&ixlib=rb-4.0.3&q=80&w=1080"
+  },
+  {
     "name": "Amsterdam",
     "country": "Netherlands",
     "description": "Amsterdam is the capital of the Netherlands, known for its picturesque canals, historic architecture, and vibrant cultural scene.",
@@ -241,28 +289,28 @@
     "img": "https://images.unsplash.com/photo-1589733000502-225e3f26fb8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TWFsYWNjYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
   {
-    "name": "Central",
-    "country": "Hong Kong",
-    "description": "Central is the heart of Hong Kong's business district, known for its towering skyscrapers, luxury shopping malls, and vibrant nightlife.",
+    "name": "Langkawi",
+    "country": "Malaysia",
+    "description": "Langkawi is a tropical paradise with beautiful beaches, lush rainforests, and a laid-back atmosphere, perfect for relaxation and adventure.",
     "attractions": [
-      "Victoria Peak",
-      "Lan Kwai Fong",
-      "Man Mo Temple"
+      "Langkawi Cable Car",
+      "Eagle Square",
+      "Tanah Rata Waterfall"
     ],
     "estimatedCost": "5000",
-    "rating": "4.7",
+    "rating": "4.8",
     "activity": [
-      "Tram Ride to the Peak",
-      "Bar Hopping in Lan Kwai Fong",
-      "Shopping in IFC Mall"
+      "Island Hopping Tour",
+      "Jet Ski Adventure",
+      "Mangrove Forest Cruise"
     ],
     "food": [
-      "Dim Sum",
-      "Roast Goose",
-      "Egg Waffles"
+      "Nasi Dagang",
+      "Laksa",
+      "Satay"
     ],
     "id": "11",
-    "img": "https://images.unsplash.com/photo-1484669970465-b0c50d7f6964?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZyUyMGtvbmclMjBjZW50cmFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+    "img": "https://images.unsplash.com/photo-1591251010190-43c22baa46b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TGFuZ2thd2l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
   },
   {
     "name": "Causeway Bay",
@@ -791,5 +839,29 @@
     ],
     "id": "33",
     "img": "https://images.unsplash.com/photo-1586987177718-54e088c798b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Qm9yZGVhdXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "description": "Barcelona, located on the northeastern coast of Spain, is known for its unique architecture, vibrant street life, and beautiful beaches.",
+    "attractions": [
+      "Sagrada Familia",
+      "Park Güell",
+      "Gothic Quarter"
+    ],
+    "estimatedCost": "6500",
+    "rating": "4.3",
+    "activity": [
+      "Exploring La Rambla",
+      "Visiting Casa Batlló",
+      "Relaxing at Barceloneta Beach"
+    ],
+    "food": [
+      "Tapas",
+      "Paella",
+      "Churros"
+    ],
+    "id": "34",
+    "img": "https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
   }
 ]

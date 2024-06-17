@@ -13,7 +13,7 @@
 </head>
 
 <style>
-  .header-text{
+  .header-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +22,7 @@
     z-index: 1;
   }
 
-  #explore{
+  #explore {
     color: #FFEFEC;
     text-align: center;
     font-weight: 600;
@@ -32,18 +32,18 @@
     top: 20px;
   }
 
-  #landscapes{
+  #landscapes {
     color: #FFEFEC;
     font-family: "Yesteryear";
     font-size: 7rem;
   }
 
-  #current{
+  #current {
     transform: scale(1.1);
     font-weight: 700;
   }
-  
-  #current::after{
+
+  #current::after {
     content: "";
     display: block;
     width: 75%;
@@ -51,11 +51,10 @@
     border-radius: 10px;
     background-color: #ff6600;
     position: absolute;
-    bottom: -7px; 
+    bottom: -7px;
     left: 50%;
     transform: translateX(-50%);
   }
-
 </style>
 
 <header class="header" style="background-image: url('./assets/images/destination-background.png'); height: 70vh;">
@@ -70,7 +69,7 @@
       <ul>
         <li class="active"><a href="homepage.html">Home</a></li>
         <li class="active"><a href="#">About Us</a></li>
-        <li><a href="#" id="current" style="color: #ff6600;">Tour</a></li>
+        <li><a href="#" id="current" style="color: #ff6600;">Destination</a></li>
         <li class="active"><a href="gallery.html">Gallery</a></li>
         <li class="active"><a href="#">Blog</a></li>
         <li class="active"><a href="contact.html">Contact</a></li>
@@ -82,27 +81,40 @@
 
 <body>
   <div class="container">
-    <!-- Sort -->
-    <div class="sort-option my-4">
-      <div class="option">
-        <button class="btn btn-sort low-to-high"><i class="fa-solid fa-arrow-up-long mr-0"></i><i class="fa-solid fa-sack-dollar"></i>Low To High</button>
+    <div class="action-section">
+      <!-- Search box -->
+      <div class="search py-3">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Enter your destination...   " name="keyword" class="form-control search-input">
       </div>
-      <div class="option">
-        <button class="btn btn-sort high-to-low"><i class="fa-solid fa-arrow-down-long mr-0"></i><i class="fa-solid fa-sack-dollar"></i>High To Low</button>
+      <div class="alert alert-danger d-none" role="alert">
+        There are no results matching your search!!
       </div>
-      <div class="option">
-        <button class="btn btn-sort name"><i class="fa-solid fa-arrow-down-a-z"></i>Name (A-Z)</button>
-      </div>
-      <div class="option">
-        <button class="btn btn-sort rate"><i class="fa-solid fa-star"></i></i>Rate</button>
-      </div>
-      <div class="option">
-        <button class="btn btn-sort reset"><i class="fa-solid fa-rotate"></i></i>Reset</button>
+
+      <!-- Sort -->
+      <div class="sort-option">
+        <div class="option">
+          <button class="btn btn-sort low-to-high"><i class="fa-solid fa-arrow-up-long mr-0"></i><i
+              class="fa-solid fa-sack-dollar"></i>Low To High</button>
+        </div>
+        <div class="option">
+          <button class="btn btn-sort high-to-low"><i class="fa-solid fa-arrow-down-long mr-0"></i><i
+              class="fa-solid fa-sack-dollar"></i>High To Low</button>
+        </div>
+        <div class="option">
+          <button class="btn btn-sort name"><i class="fa-solid fa-arrow-down-a-z"></i>Name (A-Z)</button>
+        </div>
+        <div class="option">
+          <button class="btn btn-sort rate"><i class="fa-solid fa-star"></i></i>Rate</button>
+        </div>
+        <div class="option">
+          <button class="btn btn-sort reset"><i class="fa-solid fa-rotate"></i></i>Reset</button>
+        </div>
       </div>
     </div>
 
     <!-- Cards -->
-    <div class="destination px-4 py-3">
+    <div class="destination mt-4 px-4 py-3">
       <!-- Render from destination.js -->
     </div>
 
@@ -111,8 +123,9 @@
       <!-- Render from destination.js -->
     </div>
 
+
   </div>
-  
+
   <script src="./assets/js/destination.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

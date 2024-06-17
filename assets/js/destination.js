@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const loader = document.querySelector(".loader")
   // Fetch data from data.json
   try {
     const response = await fetch("data.json");
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const itemsPerPage = 9; // Card per page
   var currentPage = 1;
-  const totalPages = 4;
+  const totalPages = Math.ceil(data.length / itemsPerPage);
 
   // Create card and display
   const displayPage = (data, page) => {
@@ -142,21 +143,40 @@ document.addEventListener("DOMContentLoaded", async () => {
       buttonsSort.forEach(btn => btn.classList.remove("selected"))
       button.classList.add("selected")
 
-      let sortedArr = data;
+      let sortedData = data;
       const buttonClass = button.classList;
 
       if (buttonClass.contains("low-to-high")) {
-        sortedArr = lowToHigh([...data]);
+        sortedData = lowToHigh([...data]);
       } else if (buttonClass.contains("high-to-low")) {
-        sortedArr = highToLow([...data]);
+        sortedData = highToLow([...data]);
       } else if (buttonClass.contains("name")) {
-        sortedArr = sortByName([...data]);
+        sortedData = sortByName([...data]);
       } else if (buttonClass.contains("rate")) {
-        sortedArr = sortByRate([...data]);
+        sortedData = sortByRate([...data]);
       }
 
-      displayPage(sortedArr, 1);
-      createPagination(totalPages, sortedArr);
+      displayPage(sortedData, 1);
+      createPagination(totalPages, sortedData);
     });
   });
+
+  // Search
+  const searchInput = document.querySelector(".search-input")
+  searchInput.addEventListener("input", () => {
+    let alertNotFound = document.querySelector(".alert-danger")
+    const keyword = searchInput.value
+    const regex = new RegExp(keyword, "i")
+    let filterData = data.filter(card => regex.test(card.name))
+
+    displayPage(filterData, 1);
+    createPagination(Math.ceil(filterData.length / itemsPerPage), filterData);
+
+    if(filterData.length == 0){
+      console.log(alertNotFound)
+      alertNotFound.classList.remove("d-none")
+    }else{
+      alertNotFound.classList.add("d-none")
+    }
+  })
 });
