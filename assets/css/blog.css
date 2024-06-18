@@ -4,10 +4,12 @@
     box-sizing: border-box;
     position: relative;
 }
-body{
+
+body {
     width: 100%;
     height: auto;
 }
+
 .container {
     width: 100%;
     height: auto;
@@ -31,6 +33,7 @@ body{
     top: 610px; */
     z-index: 1;
 }
+
 .titletren {
     padding-top: 34px;
     margin-bottom: 40px;
@@ -44,11 +47,13 @@ body{
     text-transform: capitalize;
     color: #181E4B;
 }
+
 .icon img {
     width: 30px;
-    margin-right: 20px ;
-    
+    margin-right: 20px;
+
 }
+
 .icon img {
     transition: transform 0.3s ease-in-out;
     /* Tạo hiệu ứng chuyển đổi mượt mà */
@@ -74,14 +79,14 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-   }
-   
-   button.learn-more {
+}
+
+button.learn-more {
     width: 12rem;
     height: auto;
-   }
-   
-   button.learn-more .circle {
+}
+
+button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -90,26 +95,26 @@ button {
     height: 3rem;
     background: #282936;
     border-radius: 1.625rem;
-   }
-   
-   button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     background: #fff;
-   }
-   
-   button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
-   }
-   
-   button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.29rem;
@@ -119,9 +124,9 @@ button {
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
     transform: rotate(45deg);
-   }
-   
-   button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -136,22 +141,22 @@ button {
     text-align: center;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-   }
-   
-   button:hover .circle {
+}
+
+button:hover .circle {
     width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
+}
+
+button:hover .button-text {
     color: #fff;
-   }
-   
-   /* css box */
+}
+
+/* css box */
 .nd a {
     font-size: 24px;
     font-family: "Poppins", sans-serif;
@@ -159,6 +164,7 @@ button {
     color: #555;
 
 }
+
 .nd h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -166,8 +172,9 @@ button {
     font-style: normal;
     line-height: 26px;
     text-align: center;
-    color: #555; 
+    color: #555;
 }
+
 .nd p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -175,34 +182,50 @@ button {
     font-style: normal;
     line-height: 26px;
     text-align: center;
-    color: #555;  
+    color: #555;
 }
+
 .box {
     margin: 0 auto;
     width: 1000px;
     height: 266px;
     background-color: #fff;
-    display: flex ;
+    display: flex;
     margin-bottom: 40px;
     box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
 }
-.box img{
+
+.box img {
     height: 266px;
     width: auto;
     margin-right: 30px;
 }
-.nd  {
+.box {
+    opacity: 0; /* Ẩn box ban đầu */
+    transform: translateY(50px); /* Di chuyển box xuống 50px */
+    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+  }
+  
+.box.in-view {
+    opacity: 1; /* Hiển thị box khi xuất hiện trong vùng nhìn */
+    transform: translateY(0px); /* Di chuyển box về vị trí ban đầu */
+  }
+
+.nd {
     text-align: left;
     padding-top: 30px;
 }
+
 .nd p {
     text-align: left;
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 .nd h6 {
     position: absolute;
 }
+
 .nd a {
     transition: transform 1.5s ease-in-out;
     /* Tạo hiệu ứng chuyển đổi mượt mà */
@@ -247,21 +270,46 @@ button {
     position: relative;
     z-index: 2;
 }
-#logo{
+
+#logo {
     width: 150px;
     height: 150px;
     object-fit: cover;
     transition: transform 0.3s ease;
     margin-right: 60px;
 }
-#logo:hover{
+.icon-container {
+    position: fixed; /* Cố định vị trí icon */
+    bottom: 30px; /* Khoảng cách từ dưới đáy trang */
+    right: 10px; /* Khoảng cách từ mép phải */
+    z-index: 100; /* Đảm bảo icon hiển thị trên các phần tử khác */
+    transform: translate(-50%, -50%); /* Di chuyển icon về trung tâm */
+    display: flex; /* Chuyển đổi container thành flexbox */
+    align-items: center; /* Canh giữa các mục theo chiều dọc */
+  }
+  
+  .icon-container img {
+    width: 70px;
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    /* Tạo hiệu ứng chuyển đổi mượt mà */
+  }
+  .icon-container img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+#logo:hover {
     transform: scale(1.1);
 }
 
-.nav-bar{
+.nav-bar {
     text-align: center;
 }
-.nav-bar > ul {
+
+.nav-bar>ul {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -276,18 +324,20 @@ button {
     position: relative;
     white-space: nowrap;
     color: white;
-    transition: transform 0.3s ease, color 0.3s ease,all 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, all 0.3s ease;
 }
+
 .nav-bar .active:hover {
     transform: scale(1.1);
     font-weight: 700;
 }
-#current{
+
+#current {
     transform: scale(1.1);
     font-weight: 700;
 }
-  
-#current::after{
+
+#current::after {
     content: "";
     display: block;
     width: 75%;
@@ -295,11 +345,12 @@ button {
     border-radius: 10px;
     background-color: #ff6600;
     position: absolute;
-    bottom: -7px; 
+    bottom: -7px;
     left: 50%;
     transform: translateX(-50%);
 }
-.nav-bar li.active::after{
+
+.nav-bar li.active::after {
     content: "";
     display: block;
     width: 75%;
@@ -307,18 +358,21 @@ button {
     border-radius: 10px;
     background-color: #ff6600;
     position: absolute;
-    bottom: -7px; 
+    bottom: -7px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-.nav-bar li.active:hover::after{
+
+.nav-bar li.active:hover::after {
     opacity: 1;
 }
+
 .nav-bar li a {
     display: block;
-    color: inherit; /* Đảm bảo màu chữ của liên kết kế thừa từ li */
+    color: inherit;
+    /* Đảm bảo màu chữ của liên kết kế thừa từ li */
     text-decoration: none;
 }
 
@@ -332,3 +386,37 @@ button {
     /* Phóng to ảnh khi di chuột qua 10% */
 }
 
+
+/* PAGINATION */
+.listPage li {
+    /* padding: 5px 15px; */
+    background: #ffffff;
+    color: #ff6407;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .1);
+    font-family: "Poppins", sans-serif;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    margin-right: 30px;
+    /* padding-left: 20px; */
+    text-align: center;
+    line-height: 30px;
+    
+}
+
+.listPage li.selected,
+.listPage li:hover,
+.listPage li:active,
+.listPage li:focus {
+    background: #ff6407;
+    color: #ffffff;
+}
+.listPage {
+    display: flex;
+    margin-left: 650px;
+}
+.listPage .active {
+    background: #ff6407;
+    color: #ffffff;
+}

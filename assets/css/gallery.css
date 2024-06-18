@@ -60,15 +60,15 @@ body{
     box-shadow: 0px 20px 35px rgba(223, 105, 81, 0.15);
     border-radius: 10px;
     border: none;
-    padding-top: 15px;
-    /* font-family: "Poppins", sans-serif;
+    padding-top: 5px;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13.7159px;
-    line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 20px; */
+    margin-top: 20px;
+    cursor: pointer;
 }
 .trai .nutview:hover {
     background-color:#d34d32; 
@@ -250,6 +250,10 @@ body{
 
 
 
+ 
+
+
+
 
 
 
@@ -379,3 +383,5 @@ a {
     transform: scale(1.05);
     /* Phóng to ảnh khi di chuột qua 10% */
 }
+
+  
