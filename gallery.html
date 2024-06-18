@@ -1,85 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
     <title>Gallery</title>
+    
 </head>
+
 <body>
+    <style>
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: justify;
+            z-index: 1;
+        }
+
+        #enjoy {
+            color: #FFEFEC;
+            text-align: center;
+            font-weight: 600;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            position: relative;
+            top: 20px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #gallery {
+            color: #FFEFEC;
+            font-family: "Yesteryear";
+            font-size: 7rem;
+        }
+
+        #current {
+            transform: scale(1.1);
+            font-weight: 700;
+        }
+
+        #current::after {
+            content: "";
+            display: block;
+            width: 75%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: #ff6600;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        
+    </style>
     <div class="container">
-        <div class="header">
+        <header class="header"
+            
+        >
+            <div class="overlay"></div>
+            <div class="header-text">
+                <div id="enjoy">ENJOY</div>
+                <div id="gallery">Gallery</div>
+            </div>
+            <div class="nav-top-bar">
+                <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt=""
+                        id="logo" /></a>
+                <div class="nav-bar">
+                    <ul>
+                        <li class="active"><a href="homepage.html">Home</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li class="active"><a href="destination.html">Destination</a></li>
+                        <li class="active"><a href="#" id="current" style="color: #ff6600;">Gallery</a></li>
+                        <li class="active"><a href="blog.html">Blog</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li class="active"><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="noidung">
+        <div class="gioithieu">
+            <div class="trai">
+                <h5>PROMOTION</h5>
+                <h2>We Provide You Best Europe Sightseeing Tours</h2>
+                <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
+                    internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime
+                    quasi aut ducimus illum aut optio quibusdam!</p>
+                <a href="#"><div class="nutview">View Package</div></a>
+            </div>
+            <div class="phai">
+                <img src="./assets/images/vongelip.png" alt="">
+                <img src="./assets/images/anhelip.png" alt="" class="imgelip">
+                <img src="./assets/images/vett.png" alt="" class="imgvett">
+            </div>
+        </div>
+        <div class="imggirl">
+            <img src="./assets/images/gai.png" alt="">
+            <p>CMP Travel</p>
+        </div>
+        <div class="gioithieu1">
+            <div class="anhgt">
+                <img src="./assets/images/anhgt.png" alt="">
+            </div>
+            <div class="textleft">
+                <h3>TREND</h3>
+                <h5>Our Popular Tour Plans</h5>
+                <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium. Et
+                    labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium.</p>
+                <img src="./assets/images/logot.png" alt="" class="anhleft">
+
+            </div>
 
         </div>
-        <div class="noidung">
-            <div class="gioithieu">
-                <div class="trai">
-                    <h5>PROMOTION</h5>
-                    <h2>We Provide You Best Europe Sightseeing Tours</h2>
-                    <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
-                    <button>View Package</button>
+        <div class="gallerymain">
+            <h5>EXPLORE MORE</h5>
+            <p>Our Collected Gallery</p>
+            <div class="anh">
+                <div class="hang1">
+                    <img src="./assets/images/gallery/1.jpg" alt="">
+                    <img src="./assets/images/gallery/2.jpg" alt="">
+                    <img src="./assets/images/gallery/10.jpg" alt="">
                 </div>
-                <div class="phai">
-                    <img src="./assets/images/vongelip.png" alt="">
-                    <img src="./assets/images/anhelip.png" alt="" class="imgelip">
-                    <img src="./assets/images/vett.png" alt="" class="imgvett">
+                <div class="hang2">
+                    <img src="./assets/images/gallery/3.jpg" alt="">
+                    <img src="./assets/images/gallery/4.jpg" alt="">
+                    <img src="./assets/images/gallery/5.jpg" alt="">
                 </div>
-            </div>
-            <div class="imggirl">
-                <img src="./assets/images/gai.png" alt="">
-                <p>CMP Travel</p>
-            </div>
-            <div class="gioithieu1">
-                <div class="anhgt">
-                    <img src="./assets/images/anhgt.png" alt="">
+                <div class="hang3">
+                    <img src="./assets/images/gallery/17.png" alt="" class="imgsp">
+                    <img src="./assets/images/gallery/6.jpg" alt="" class="imgsp1">
                 </div>
-                <div class="textleft">
-                    <h3>TREND</h3>
-                    <h5>Our Popular Tour Plans</h5>
-                    <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium.</p>
-                    <img src="./assets/images/logot.png" alt="" class="anhleft">
+                <div class="hang4">
+                    <img src="./assets/images/gallery/7.jpg" alt="">
+                    <img src="./assets/images/gallery/8.jpg" alt="">
+                    <img src="./assets/images/gallery/9.jpg" alt="">
                     
                 </div>
-        
             </div>
-            <div class="gallerymain">
-                <h5>EXPLORE MORE</h5>
-                <p>Our Collected Gallery</p>
-                <div class="anh">
-                    <div class="hang1">
-                        <img src="./assets/images/gallery/1.jpg" alt="">
-                        <img src="./assets/images/gallery/2.jpg" alt="">
-                        <img src="./assets/images/gallery/10.jpg" alt="">
-                    </div>
-                    <div class="hang2">
-                        <img src="./assets/images/gallery/3.jpg" alt="">
-                        <img src="./assets/images/gallery/4.jpg" alt="">
-                        <img src="./assets/images/gallery/5.jpg" alt="">
-                    </div>
-                    <div class="hang3">
-                        <img src="./assets/images/gallery/17.png" alt="" class="imgsp">
-                        <img src="./assets/images/gallery/6.jpg" alt="" class="imgsp1">
-                    </div>
-                    <div class="hang4">
-                        <img src="./assets/images/gallery/7.jpg" alt="">
-                        <img src="./assets/images/gallery/8.jpg" alt="">
-                        <img src="./assets/images/gallery/9.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+        </div>
         <div class="footer">
 
         </div>
     </div>
 </body>
+
 </html>

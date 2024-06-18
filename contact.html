@@ -12,13 +12,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
+    <style>
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: justify;
+            z-index: 1;
+        }
 
-        </div>
+        #enjoy {
+            color: #FFEFEC;
+            text-align: center;
+            font-weight: 600;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            position: relative;
+            top: 20px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #gallery {
+            color: #FFEFEC;
+            font-family: "Yesteryear";
+            font-size: 7rem;
+        }
+
+        #current {
+            transform: scale(1.1);
+            font-weight: 700;
+        }
+
+        #current::after {
+            content: "";
+            display: block;
+            width: 75%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: #ff6600;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        
+    </style>
+    <div class="container">
+        <header class="header"
+            
+        >
+            <div class="overlay"></div>
+            <div class="header-text">
+                <div id="enjoy">CONTACT</div>
+                <div id="gallery">Contact With Us</div>
+            </div>
+            <div class="nav-top-bar">
+                <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt=""
+                        id="logo" /></a>
+                <div class="nav-bar">
+                    <ul>
+                        <li class="active"><a href="homepage.html">Home</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li class="active"><a href="destination.html">Destination</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                        <li class="active"><a href="blog.html">Blog</a></li>
+                        <li class="active"><a href="#" id="current" style="color: #ff6600;">Contact</a></li>
+                        <li class="active"><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <div class="main-box">
             <div class="tren">
                 <div class="titletren">
