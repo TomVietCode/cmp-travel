@@ -38,24 +38,6 @@
     font-size: 7rem;
   }
 
-  #current{
-    transform: scale(1.1);
-    font-weight: 700;
-  }
-  
-  #current::after{
-    content: "";
-    display: block;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -7px; 
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
 </style>
 
 <header class="header" style="background-image: url('./assets/images/destination-background.png'); height: 70vh;">
@@ -70,9 +52,9 @@
       <ul>
         <li class="active"><a href="homepage.html">Home</a></li>
         <li class="active"><a href="#">About Us</a></li>
-        <li><a href="#" id="current" style="color: #ff6600;">Tour</a></li>
+        <li class="active"><a href="destination.html">Destination</a></li>
         <li class="active"><a href="gallery.html">Gallery</a></li>
-        <li class="active"><a href="#">Blog</a></li>
+        <li class="active"><a href="blog.html">Blog</a></li>
         <li class="active"><a href="contact.html">Contact</a></li>
         <li class="active"><a href="#">Feedback</a></li>
       </ul>
@@ -299,13 +281,13 @@
           </select>
         </div>
         <div class="form-group col-md-8">
-          <input type="text" placeholder="Full Name" class="form-control" required>
+          <input type="text" placeholder="Full Name *" class="form-control" required>
         </div>
         <div class="form-group col-md-12">
           <input type="email" placeholder="Email" class="form-control">
         </div>
         <div class="form-group col-md-12">
-          <input type="number" placeholder="Phone Number" class="form-control" required>
+          <input type="number" placeholder="Phone Number *" class="form-control" required>
         </div>
         <div class="form-group col-md-12">
           <textarea id="other-request" class="form-control" placeholder="Other Request"></textarea>
