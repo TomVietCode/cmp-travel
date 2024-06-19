@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const loaderBox = document.querySelector(".loader-box")
   const loader = document.querySelector(".loader")
   // Fetch data from data.json
   try {
@@ -104,9 +105,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       paginationContainer.appendChild(pageButton);
     }
   };
-
-  displayPage(data, 1);
-  createPagination(totalPages, data);
+  const showLoader = setTimeout(() => {
+    loaderBox.classList.add("d-none")
+    loader.classList.add("d-none")
+    displayPage(data, 1);
+    createPagination(totalPages, data);
+  }, 2000);
 
   // Sort
   const buttonsSort = document.querySelectorAll(".btn-sort");
