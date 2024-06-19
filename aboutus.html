@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="./assets/css/aboutus.css">
+  <link rel="stylesheet" href="./assets/css/homepage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<style>
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    z-index: 1;
+  }
+
+  #explore {
+    color: #FFEFEC;
+    text-align: center;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    position: relative;
+    top: 20px;
+  }
+
+  #landscapes {
+    color: #FFEFEC;
+    font-family: "Yesteryear";
+    font-size: 7rem;
+  }
+
+  #current {
+    transform: scale(1.1);
+    font-weight: 700;
+  }
+
+  #current::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
+
+<body>
+  <!-- header -->
+  <header class="header" style="background-image: url('./assets/images/aboutus/background.jpg'); height: 70vh;">
+    <div class="overlay"></div>
+    <div class="header-text">
+      <div id="explore">READ</div>
+      <div id="landscapes">ABOUT US</div>
+    </div>
+    <div class="nav-top-bar">
+      <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt="" id="logo" /></a>
+      <div class="nav-bar">
+        <ul>
+          <li class="active"><a href="homepage.html">Home</a></li>
+          <li><a href="#" id="current" style="color: #ff6600";>About Us</a></li>
+          <li class="active"><a href="destination.html"">Destination</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="blog.html">Blog</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="body">
+    <section class="explore">
+      <div class="package large">
+        <div class="image"><img src="./assets/images/aboutus/rio.png" alt=""></div>
+        <div class="info">
+          <h2>Barcelona</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/swit.png" alt=""></div>
+        <div class="info">
+          <h2>Switzerland</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/barce2.png" alt=""></div>
+        <div class="info">
+          <h2>Barcelona</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/tommorow.png" alt=""></div>
+        <div class="info">
+          <h2>Tomorrowland</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/los.png" alt=""></div>
+        <div class="info">
+          <h2>Los Angeles</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/barce.png" alt=""></div>
+        <div class="info">
+          <h2>Rio de Janeiro</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/india.png" alt=""></div>
+        <div class="info">
+          <h2>India</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/barce3.png" alt=""></div>
+        <div class="info">
+          <h2>Barcelona</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/maldives.png" alt=""></div>
+        <div class="info">
+          <h2>Maldives</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/pakistan2.png" alt=""></div>
+        <div class="info">
+          <h2>Barcelona</h2>
+          <p>$840</p>
+        </div>
+      </div>
+      <div class="package">
+        <div class="image"><img src="./assets/images/aboutus/pakistan.png" alt=""></div>
+        <div class="info">
+          <h2>Pakistan</h2>
+          <p>$840</p>
+        </div>
+      </div>
+    </section>
+    
+  </section>
+</body>
+
+</html>

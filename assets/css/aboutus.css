@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-image: url("/assets/images/aboutus/background.jpg");
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 766px;
+}
+.title{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+.title h2{
+    font-family: "Yesteryear", cursive;
+font-size: 157.43px;
+font-weight: 400;
+line-height: 200px;
+text-align: center;
+z-index: 2;
+color: white;
+}
+.nav-top-bar {
+  padding: 63px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+#logo {
+  transition: tranform 0.3s ease;
+  width: 100%;
+}
+#logo:hover {
+  transform: scale(1.1);
+}
+.nav-bar > ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-bar li {
+  display: inline;
+  font-family: "Circular Std", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21.5px;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.nav-bar li:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.nav-bar li.active::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ff6600;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav-bar li.active:hover::after {
+  opacity: 1;
+}
+.nav-bar li a {
+  display: block;
+  color: inherit; /* Đảm bảo màu chữ của liên kết kế thừa từ li */
+}
+#git {
+  background-color: #df6951;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 50 0;
+  border-radius: 10px;
+  width: 145px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3 ease,
+    font-weight 0.3s ease;
+}
+#git:hover {
+  transform: scale(1.05);
+  background-color: #ff4d29;
+  font-weight: 700;
+}
+/* body */
+/* explor */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 363px); /* 4 columns, each 363px wide */
+  gap: 35px; /* Space between the cards */
+  margin: 50px;
+}
+.package {
+  width: 363px; /* Card width */
+  height: 363px; /* Card height */
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.package.large {
+  grid-row: span 2; /* Span 2 rows */
+  height: calc(2 * 363px + 50px); /* 2 times height + gap */
+}
+
+.image {
+  width: 100%;
+  height: 100%; /* Ensure the image doesn't take up the whole card */
+  background-color: #f0f0f0;
+
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute; /* Position text absolutely within the .package div */
+  bottom: -20px; /* Align text to the bottom */
+  left: 0; /* Align text to the left */
+  width: 80%;
+  padding: 10px; /* Padding for text */
+  color: white; /* White text color */
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between; /* Space between the title and price */
+  align-items: center; /* Center the text vertically */
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+text-align: center;
+
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+text-align: center;
+}
