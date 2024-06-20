@@ -22,31 +22,31 @@ a {
   width: 100%;
   height: 766px;
 }
-.title{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.title {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title h1 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 200px;
   letter-spacing: 0.1em;
   text-align: center;
   z-index: 2;
   color: white;
 }
-.title h2{
-    font-family: "Yesteryear", cursive;
-font-size: 157.43px;
-font-weight: 400;
-line-height: 200px;
-text-align: center;
-z-index: 2;
-color: white;
+.title h2 {
+  font-family: "Yesteryear", cursive;
+  font-size: 157.43px;
+  font-weight: 400;
+  line-height: 200px;
+  text-align: center;
+  z-index: 2;
+  color: white;
 }
 .nav-top-bar {
   padding: 63px 200px;
@@ -129,13 +129,103 @@ color: white;
   font-weight: 700;
 }
 /* body */
-/* explor */
+.title1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.title2 {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 71.04px;
+  text-align: left;
+}
+/* promotion */
+.promotion{
+  padding: 200px;
+}
+.promotion h1{
+  text-align: left;
+}
+.promotion h2{
+  text-align: left;
+}
+.hero {
+  padding: 100px 0; /* Adjust padding as needed */
+}
 
-main {
+.image-container {
+  position: relative; /* To position decorative lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+.col-md-6 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: black;
+  margin: 40px 60px 40px 0px;
+}
+/* Add styles for decorative lines using pseudo-elements */
+.image-container::before,
+.image-container::after {
+  content: "";
+  position: absolute;
+  width: 100px; /* Adjust width as needed */
+  height: 2px;
+  background-color: #e04f67; /* Line color */
+  top: 0px;
+  /* Position and rotate lines as needed */
+}
+
+.image-container::before {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.image-container::after {
+  right: 0;
+  transform: translateY(-50%);
+}
+.view-packages{
+  background-color: #DF6951;
+    color: white;
+    border: none;
+    display: inline-block !important;
+    padding: 1px 20px;
+    cursor: pointer;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3 ease-in-out, font-weight 0.3 ease-in-out;
+}
+.view-packages:hover{
+    transform: scale(1.05);
+    background-color: #ff4d29;
+    font-weight:700;
+}
+/* explore */
+.explore_more{
+  margin: 300px 0px;
+}
+.explore {
   display: grid;
   grid-template-columns: repeat(4, 363px); /* 4 columns, each 363px wide */
   gap: 35px; /* Space between the cards */
-  margin: 50px;
+  margin: 50px 50px;
 }
 .package {
   width: 363px; /* Card width */
@@ -144,6 +234,13 @@ main {
   overflow: hidden;
   background-color: white;
   position: relative;
+  opacity: 0; /* Ẩn box ban đầu */
+    transform: translateY(50px); /* Di chuyển box xuống 50px */
+    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+}
+.package{
+  opacity: 1; /* Hiển thị box khi xuất hiện trong vùng nhìn */
+  transform: translateY(0px); /* Di chuyển box về vị trí ban đầu */
 }
 
 .package.large {
@@ -155,7 +252,6 @@ main {
   width: 100%;
   height: 100%; /* Ensure the image doesn't take up the whole card */
   background-color: #f0f0f0;
-
 }
 
 .image img {
@@ -166,31 +262,89 @@ main {
 
 .info {
   position: absolute; /* Position text absolutely within the .package div */
-  bottom: -20px; /* Align text to the bottom */
+  bottom: -15px; /* Align text to the bottom */
   left: 0; /* Align text to the left */
   width: 80%;
   padding: 10px; /* Padding for text */
   color: white; /* White text color */
   display: flex;
-  margin-left: 20px;
+  margin-left: 30px;
   justify-content: space-between; /* Space between the title and price */
-  align-items: center; /* Center the text vertically */
+  align-items: center;
+  font-family: "Poppins", sans-serif; 
 }
 
-h2 {
+.explore h2 {
+  margin-right: 30px;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
-font-size: 22px;
-font-weight: 600;
-line-height: 33px;
-text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+}
+
+.explore p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+}
+/* trend */
+.trend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 300px;
+}
+.trend h1{
+  text-align: left;
+}
+.trend h2{
+  text-align: left;
+}
+.imagines{
+  width: 40%;
+}
+.imagines img{
+  width: 100%;
+  margin-right: 30px;
+}
+.content {
+  width: 60%;
+  padding:0px 250px;
+}
+.content p{
+  font-family: "Poppins", sans-serif; 
+  color: #000000;
+  margin-bottom: 20px;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
 
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-font-size: 22px;
-font-weight: 600;
-line-height: 33px;
-text-align: center;
+.stats {
+  margin-top: 50px;
+  display: flex;
+  justify-content: left;
+  gap:70px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-image {
+  width: 100%;
+  height: auto;
+}
+
+.shell {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 15%;
+  transform: translate(-50%, -50%);
 }
