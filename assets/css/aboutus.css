@@ -217,6 +217,59 @@ a {
     background-color: #ff4d29;
     font-weight:700;
 }
+/* adventure */
+.controls {
+  padding: 3rem;
+}
+
+.slide-wrapper {
+  position: relative;
+  margin: 0px auto 250px;
+  height: 50vh;
+}
+
+.slider {
+  display: flex;
+  height: 50vh;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.slider video {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  z-index: 1;
+  height: 50vh;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Đảm bảo nút điều hướng ở trên video */
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms, transform ease 0.3s;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 /* explore */
 .explore_more{
   margin: 300px 0px;

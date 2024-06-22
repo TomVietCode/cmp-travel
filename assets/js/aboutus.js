@@ -1,17 +1,15 @@
-const boxes = document.querySelectorAll('.pakage');
-const options = {
-  root: null,
-  threshold: 0.5, // Hiệu ứng bắt đầu khi 50% box xuất hiện trong vùng nhìn
-};
+document.addEventListener("DOMContentLoaded", function() {
+  const videos = document.querySelectorAll('.slider video');
+  const slider = document.querySelector('.slider');
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-    } else {
-      entry.target.classList.remove('in-view');
-    }
+  // Play video when clicked on navigation dots
+  document.querySelectorAll('.slider-nav a').forEach((navDot, index) => {
+      navDot.addEventListener('click', (e) => {
+          e.preventDefault();
+          const video = videos[index];
+          video.scrollIntoView({ behavior: 'smooth' });
+          videos.forEach(v => v.pause());
+          video.play();
+      });
   });
-}, options);
-
-boxes.forEach(box => observer.observe(box));
+});

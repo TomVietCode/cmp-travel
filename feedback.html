@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Back</title>
+    <link rel="stylesheet" href="./assets/css/feedback.css">
+    <link rel="stylesheet" href="./assets/css/aboutus.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .header-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: justify;
+          z-index: 1;
+        }
+      
+        #explore {
+          color: #FFEFEC;
+          text-align: center;
+          font-weight: 600;
+          font-size: .8rem;
+          letter-spacing: 5px;
+          position: relative;
+          top: 0px;
+        }
+      
+        #landscapes {
+          color: #FFEFEC;
+          font-family: "Yesteryear";
+          font-size: 7rem;
+        }
+      
+        #current {
+          transform: scale(1.1);
+          font-weight: 700;
+        }
+      
+        #current::after {
+          content: "";
+          display: block;
+          width: 75%;
+          height: 3px;
+          border-radius: 10px;
+          background-color: #ff6600;
+          position: absolute;
+          bottom: -7px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      </style>
+      
+      <body>
+        <!-- header -->
+        <header class="header" style="background-image: url('./assets/images/destination-background.png'); height: 70vh;">
+          <div class="overlay"></div>
+          <div class="header-text">
+            <div id="explore">READ</div>
+            <div id="landscapes">FEED BACK</div>
+          </div>
+          <div class="nav-top-bar">
+            <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt="" id="logo" /></a>
+            <div class="nav-bar">
+              <ul>
+                <li class="active"><a href="homepage.html">Home</a></li>
+                <li><a href="#" id="current" style="color: #ff6600";>About Us</a></li>
+                <li class="active"><a href="destination.html"">Destination</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      
+    <div class="main-body">
+        <h1 class="title1">PROMOTION</h1>
+        <h2 class="title2">See What Our Clients Say About Us</h2>
+        <div class="clientfb">
+            <img src="./assets/images/feedback/client2.jpg" alt="" class="clientimg">
+            <div class="text">
+                <img src="./assets/images/feedback/big.png" alt="" id="bigicon">
+                <p>Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis. <img src="./assets/images/feedback/small.png" alt=""></p>
+                <h3 class="client">Hoang Quoc Manh - Wet Boy</h3>
+                <img src="./assets/images/feedback/trai.png" alt="" id="trai">
+                <img src="./assets/images/feedback/phai.png" alt="" id="phai">
+            </div>
+        </div>
+        <img src="./assets/images/feedback/Travel_Concepts_2 1.png" alt="" id="travel">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <img src="./assets/images/header/logo-removebg-preview.png" alt="Logo" class="footer-logo" />
+            <p class="footer-text">Travel helps companies manage payments easily.</p>
+            <div class="footer-social-icons">
+              <img src="./assets/images/homepage/footer/messenger.png" alt="Instagram" />
+              <img src="./assets/images/homepage/footer/linkedin.png" alt="Messenger" />
+              <img src="./assets/images/homepage/footer/twitter.png" alt="Twitter" />
+              <img src="./assets/images/homepage/footer/facebook.png" alt="Facebook" />
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Destination</h3>
+              <ul>
+                <li><a href="#">Maldives</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li><a href="#">Las Vegas</a></li>
+                <li><a href="#">Toronto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-subscribe">
+            <h3>Join Our Newsletter</h3>
+            <div class="email-box">
+              <img src="./assets/images/homepage/footer/email.png" alt="Email Icon" />
+              <input type="email" placeholder="example@gmail.com" />
+            </div>
+            <p>* Will send you weekly updates for your better tour packages.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright @ CMP-2024. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -112,17 +112,27 @@
     </section>
     <!-- video -->
      <section class="video" id="video">
-      <div class="content">
+      <div class="adventuretitle">
         <h1 class="title1">Adventure is worthwhile</h1>
         <h2 class="title2">Discover new places with us, adventure awaits</h2>
       </div>
       <div class="controls">
-        <span class="vid-btn"></span>
+        <div class="slide-wrapper">
+          <div class="slider">
+            <div class="slider">
+              <video src="./assets/images/aboutus/italy.mp4" id="video-1" muted autoplay preload="auto"></video>
+              <video src="./assets/images/aboutus/maldives.mp4" id="video-2" muted  preload="auto"></video>
+              <video src="./assets/images/aboutus/japan.mp4" id="video-3" muted  preload="auto"></video>
+            </div>            
+          </div>
+          <div class="slider-nav">
+            <a href="#video-1"></a>
+            <a href="#video-2"></a>
+            <a href="#video-3"></a>
+          </div>
+        </div>
       </div>
-
-      <div class="video-container">
-        <video src="" id="video-slider"></video>
-      </div>
+      <script src="./assets/js/aboutus.js"></script>
      </section>
     <!-- trend -->
     <section class="trend">
