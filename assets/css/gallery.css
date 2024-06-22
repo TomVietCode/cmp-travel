@@ -121,7 +121,7 @@ body{
     width: 700px;
 }
 .imggirl img{
-    width: 1518px;
+    width: 100%;
     height: auto;
 }
 
@@ -376,12 +376,11 @@ a {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-    background: #FFFFFF
+    background: #FFFFFF;
     font-family : "Volkhov", serif;
     font-size : 20px;
     position: relative;
     top: -80px;
-
 }
 
 .left-text {
@@ -518,7 +517,6 @@ a {
     margin-left: 100px;
     margin-top: 200px;
     margin-right: 100px;
-    
   }
   .phaii .cmp {
     width: 30%;
@@ -533,7 +531,7 @@ a {
     transition: transform 0.5s ease-in-out;
   }
   .leftt button {
-    display: block;
+    display: inline-block;
     height: 45px;
     width: 170px;
     padding: 10px;
@@ -548,8 +546,6 @@ a {
     line-height: 19.16px;
     text-align: center;
     margin-top: 20px;
-    position: relative;
-    right: -200px;
     margin-bottom: 30px;
   }
 
@@ -558,8 +554,6 @@ a {
     background-color: #d35400;
   }
   .leftt .logopk {
-    position: relative;
-    right: -130px;
     margin-top: 40px;
     cursor:pointer;
   }

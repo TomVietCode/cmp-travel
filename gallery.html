@@ -5,99 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/gallery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed|Yesteryear">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/homepage.css">
     <title>Gallery</title>
 
 </head>
 
 <body>
-    <style>
-        .header-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: justify;
-            z-index: 1;
-        }
-
-        #enjoy {
-            color: #FFEFEC;
-            text-align: center;
-            font-weight: 600;
-            font-size: .8rem;
-            letter-spacing: 3px;
-            position: relative;
-            top: 20px;
-            font-family: "Poppins", sans-serif;
-        }
-
-        #gallery {
-            color: #FFEFEC;
-            font-family: "Yesteryear";
-            font-size: 7rem;
-        }
-
-        #current {
-            transform: scale(1.1);
-            font-weight: 700;
-        }
-
-        #current::after {
-            content: "";
-            display: block;
-            width: 75%;
-            height: 3px;
-            border-radius: 10px;
-            background-color: #ff6600;
-            position: absolute;
-            bottom: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    </style>
-    <div class="container">
-        <header class="header">
-            <div class="overlay"></div>
-            <div class="header-text">
-                <div id="enjoy">ENJOY</div>
-                <div id="gallery">Gallery</div>
+    <header class="header" style="background-image: url('./assets/images/header-bg/gallery-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="header-text">
+            <div id="up-title">ENJOY</div>
+            <div id="down-title">Gallery</div>
+        </div>
+        <div class="nav-top-bar">
+            <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt=""
+                    id="logo" /></a>
+            <div class="nav-bar">
+                <ul>
+                    <li class="active"><a href="homepage.html">Home</a></li>
+                    <li class="active"><a href="aboutus.html">About Us</a></li>
+                    <li class="active"><a href="destination.html">Destination</a></li>
+                    <li><a href="#" id="current" style="color: #ff6600;">Gallery</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="#">Feedback</a></li>
+                </ul>
             </div>
-            <div class="nav-top-bar">
-                <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt=""
-                        id="logo" /></a>
-                <div class="nav-bar">
-                    <ul>
-                        <li class="active"><a href="homepage.html">Home</a></li>
-                        <li class="active"><a href="aboutus.html">About Us</a></li>
-                        <li class="active"><a href="destination.html">Destination</a></li>
-                        <li class="active"><a href="#" id="current" style="color: #ff6600;">Gallery</a></li>
-                        <li class="active"><a href="blog.html">Blog</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
-                        <li class="active"><a href="#">Feedback</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-    </div>
+        </div>
+    </header>
+
     <div class="noidung">
         <div class="gioithieu">
             <div class="trai">
                 <h5>PROMOTION</h5>
-                <h2>We Provide You Best Europe Sightseeing Tours</h2>
+                <h2>We Provide You Best Sightseeing Tours</h2>
                 <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
                     internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime
                     quasi aut ducimus illum aut optio quibusdam!</p>
@@ -139,9 +82,11 @@
                     <img src="./assets/images/homepage/footer/email.png" alt="Email Icon" />
                     <input type="email" placeholder="example@gmail.com" />
                 </div>
-                <button>SEND</button>
-                <p>We will send you weekly updates for your better tour packages.</p>
-                <img src="./assets/images/logot.png" alt="" class="logopk">
+                <div class="hehe" style="text-align: center;">
+                    <button>SEND</button>
+                    <p>We will send you weekly updates for your better tour packages.</p>
+                    <img src="./assets/images/logot.png" alt="" class="logopk">
+                </div>
             </div>
             <div class="phaii">
                 <img src="./assets/images/gallery/travel.png" alt="">
@@ -185,7 +130,7 @@
             </div>
         </div>
         <div class="gallery1">
-            <p>Nature Picture</p>
+            <p>Nature</p>
             <div class="a1">
                 <div class="image-container">
                     <img
@@ -256,7 +201,7 @@
         </div>
 
         <div class="gallery1">
-            <p>Valley Picture</p>
+            <p>Valley</p>
             <div class="a1">
                 <div class="image-container">
                     <img
@@ -327,7 +272,7 @@
         </div>
 
         <div class="gallery2">
-            <p>Ocean Picture</p>
+            <p>Ocean</p>
             <div class="a1">
                 <div class="image-container">
                     <img
@@ -398,7 +343,7 @@
         </div>
 
         <div class="gallery3">
-            <p>Culture Picture</p>
+            <p>Culture</p>
             <div class="a1">
                 <div class="image-container">
                     <img
@@ -469,7 +414,7 @@
         </div>
 
         <div class="gallery4">
-            <p>Mountains Picture</p>
+            <p>Mountains</p>
             <div class="a1">
                 <div class="image-container">
                     <img
@@ -538,7 +483,7 @@
                 </div>
             </div>
             <div class="gallery5">
-                <p>Deserts Picture</p>
+                <p>Deserts</p>
                 <div class="a1">
                     <div class="image-container">
                         <img
@@ -607,7 +552,7 @@
                     </div>
                 </div>
                 <div class="gallery6">
-                    <p>People Picture</p>
+                    <p>People</p>
                     <div class="a1">
                         <div class="image-container">
                             <img

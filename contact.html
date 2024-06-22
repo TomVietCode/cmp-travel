@@ -5,145 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed|Yesteryear">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <style>
-        .header-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: justify;
-            z-index: 1;
-        }
-
-        #enjoy {
-            color: #FFEFEC;
-            text-align: center;
-            font-weight: 600;
-            font-size: .8rem;
-            letter-spacing: 3px;
-            position: relative;
-            top: 20px;
-            font-family: "Poppins", sans-serif;
-        }
-
-        #gallery {
-            color: #FFEFEC;
-            font-family: "Yesteryear";
-            font-size: 7rem;
-        }
-
-        #current {
-            transform: scale(1.1);
-            font-weight: 700;
-        }
-
-        #current::after {
-            content: "";
-            display: block;
-            width: 75%;
-            height: 3px;
-            border-radius: 10px;
-            background-color: #ff6600;
-            position: absolute;
-            bottom: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        
-    </style>
+    <header class="header" style="background-image: url('./assets/images/header-bg/contact-bg.png');">
+        <div class="overlay"></div>
+        <div class="header-text">
+            <div id="up-title">CONTACT</div>
+            <div id="down-title">Contact With Us</div>
+        </div>
+        <div class="nav-top-bar">
+            <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt="" id="logo" /></a>
+            <div class="nav-bar">
+                <ul>
+                    <li class="active"><a href="homepage.html">Home</a></li>
+                    <li class="active"><a href="aboutus.html">About Us</a></li>
+                    <li class="active"><a href="destination.html">Destination</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
+                    <li><a href="#" id="current" style="color: #ff6600;">Contact</a></li>
+                    <li class="active"><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="icon-container">
+        <i id="scrollDownIcon"><img src="./assets/images/blog/xuong.png" alt="Cuộn xuống"></i>
+        <i id="scrollUpIcon"><img src="./assets/images/blog/len.png" alt="Cuộn lên"></i>
+    </div>
     <div class="container">
-        <header class="header"
-            
-        >
-            <div class="overlay"></div>
-            <div class="header-text">
-                <div id="enjoy">CONTACT</div>
-                <div id="gallery">Contact With Us</div>
+        <div class="tren">
+            <div class="titletren">
+                <p>CONTACT</p>
+                <h3>Get In Touch</h3>
             </div>
-            <div class="icon-container">
-                <i id="scrollDownIcon"><img src="./assets/images/blog/xuong.png" alt="Cuộn xuống"></i>
-                <i id="scrollUpIcon"><img src="./assets/images/blog/len.png" alt="Cuộn lên"></i>
-              </div>
-            <div class="nav-top-bar">
-                <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt=""
-                        id="logo" /></a>
-                <div class="nav-bar">
-                    <ul>
-                        <li class="active"><a href="homepage.html">Home</a></li>
-                        <li class="active"><a href="#">About Us</a></li>
-                        <li class="active"><a href="destination.html">Destination</a></li>
-                        <li class="active"><a href="gallery.html">Gallery</a></li>
-                        <li class="active"><a href="blog.html">Blog</a></li>
-                        <li class="active"><a href="#" id="current" style="color: #ff6600;">Contact</a></li>
-                        <li class="active"><a href="#">Feedback</a></li>
-                    </ul>
+            <div class="box3">
+                <div class="box">
+                    <img src="./assets/images/tren1.png" alt=""> <br>
+                    <h2>ADDRESS</h2>
+                    <p>Adress: Yen Nghia - Ha Dong - Ha Noi</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/tren2.png" alt=""> <br>
+                    <h2>PHONE</h2>
+                    <p>Tel: +84 388 882 866</p>
+                    <p>Booking: +84 388 882 866</p>
+                    <p>Hotline: +84 388 882 866</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/tren3.png" alt=""> <br>
+                    <h2>EMAIL</h2>
+                    <p>Email: eee@phenikaa-uni.edu.vn</p>
                 </div>
             </div>
-        </header>
-        <div class="main-box">
-            <div class="tren">
-                <div class="titletren">
-                    <p>CONTACT</p>
-                    <h3>Get In Touch</h3>
-                </div>
-                <div class="box3">
-                    <div class="box">
-                        <img src="./assets/images/tren1.png" alt=""> <br>
-                        <h2>ADDRESS</h2>
-                        <p>Adress: Yen Nghia - Ha Dong - Ha Noi</p>
-                    </div>
-                    <div class="box">
-                        <img src="./assets/images/tren2.png" alt=""> <br>
-                        <h2>PHONE</h2>
-                        <p>Tel: +84 388 882 866</p>
-                        <p>Booking: +84 388 882 866</p> 
-                        <p>Hotline: +84 388 882 866</p>
-                    </div>
-                    <div class="box">
-                        <img src="./assets/images/tren3.png" alt=""> <br>
-                        <h2>EMAIL</h2>
-                        <p>Email: eee@phenikaa-uni.edu.vn</p>
-                    </div>
-                </div>
-            </div>
-            <div class="duoi">
-                <div class="phai">
-                    <h3>Contact</h3>
-                    <p>If you have any questions or comments, please contact us using the information below, we will contact you as soon as possible.</p>
-                    <input type="text" id="name" placeholder="Name"> <br>
-                    <input type="text" id="email" placeholder="Email"> <br>
-                    <input type="text" id="phone" placeholder="Phone"> <br>
-                    <textarea name="" id="message" placeholder="Message"></textarea>
+        </div>
+        <div class="duoi">
+            <div class="phai">
+                <h3>Contact</h3>
+                <p>If you have any questions or comments, please contact us using the information below, we will contact
+                    you as soon as possible.</p>
+                <input type="text" id="name" placeholder="Name"> <br>
+                <input type="text" id="email" placeholder="Email"> <br>
+                <input type="text" id="phone" placeholder="Phone"> <br>
+                <textarea name="" id="message" placeholder="Message"></textarea>
 
-                    <button>Send Messages</button>
-                    
-                </div>
-                <div class="trai">
-                    <h3>Address</h3>
-                    <p>Phenikaa Universiry</p> 
-                    <p> Yen Nghia - Ha Dong - Ha Noi</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.99415190732!2d105.7486864!3d20.9626112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452efff394ce3%3A0x391a39d4325be464!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBQaGVuaWthYQ!5e0!3m2!1svi!2s!4v1718305152436!5m2!1svi!2s" width="469" height="469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <a href="https://phenikaa-uni.edu.vn"><img src="./assets/images/logot.png" alt=""></a>
-                </div>
+                <button>Send Messages</button>
+
+            </div>
+            <div class="trai">
+                <h3>Address</h3>
+                <p>Phenikaa Universiry</p>
+                <p> Yen Nghia - Ha Dong - Ha Noi</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.99415190732!2d105.7486864!3d20.9626112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452efff394ce3%3A0x391a39d4325be464!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBQaGVuaWthYQ!5e0!3m2!1svi!2s!4v1718305152436!5m2!1svi!2s"
+                    width="469" height="469" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://phenikaa-uni.edu.vn"><img src="./assets/images/logot.png" alt=""></a>
             </div>
         </div>
 
         <div class="footer">
-            
+
         </div>
     </div>
     <script src="./assets/js/contact.js"></script>
