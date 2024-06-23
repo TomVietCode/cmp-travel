@@ -113,7 +113,7 @@ input[type="text"]::placeholder {
     font-style: normal;
     line-height: 26px;
     color: rgba(0, 0, 0, 0.26);
-    padding-left: 15px;
+    position: relative;
 }
 .duoi h3 {
     font-family: "Volkhov", serif;
@@ -142,10 +142,11 @@ input[type="text"]:focus {
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
-    line-height: 26px;
+    
     color: rgba(0, 0, 0, 0.701);
     padding-left: 15px;
     outline: none;
+    
 }
 input[type="text"]:not(:focus) {
     font-weight: 400;
@@ -173,46 +174,56 @@ input[type="text"]:not(:focus) {
 button:hover {
     background-color:#d34d32; 
   }
-
-#message {
-    background: #FFFFFF;
-    width: 350px;
-    height: 170.73px;
-    margin-bottom: 20px;
-    border: none;
-}
-#message::placeholder{
+  #message {
+    height: 150px;
+  }
+  #message::placeholder{
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
-    /* line-height: 26px; */
+    line-height: 26px;
     color: rgba(0, 0, 0, 0.26);
-    padding-left: 15px;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: -40px;
 }
 #message:focus{
     font-weight: 400;
     font-size: 18px;
-    font-style: normal;
-    /* line-height: 26px; */
+    font-style: normal; 
+    line-height: 26px;
     color: rgba(0, 0, 0, 0.701);
-    padding-left: 15px;
+    padding-left: 15px; 
     /* position: absolute;
-    top: 20px; */
-    padding-bottom: 110px;
+    top: 20px;  */
+    padding-bottom: 15px;
+    border: none;
 }
 #message:not(:focus){
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
-    /* line-height: 26px; */
+    line-height: 26px; 
     color: rgba(0, 0, 0, 0.701);
     padding-left: 15px;
     /* position: absolute;
-    top: 20px; */
-    padding-bottom: 110px;
+    top: 20px;  */
+    padding-bottom: 90px;
+    
 }
+
+input[type="text"]:hover{
+background-color: rgba(128, 128, 128, 0.21);
+}
+
+
+
+
+
+
+
+
+
+
 .trai{
     width: 45%;
     height: auto;
