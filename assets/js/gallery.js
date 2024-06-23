@@ -48,25 +48,21 @@ function scrollToTargetPosition(targetY) {
   viewPackageButton7.addEventListener('click', () => {
     scrollToTargetPosition(9210); // Thay thế 'yourTargetY' bằng tọa độ y thực tế
   });
-  viewPackageButton8.addEventListener('click', () => {
-    scrollToTargetPosition(2540); // Thay thế 'yourTargetY' bằng tọa độ y thực tế
-  });
-
 
   // lam icon bien mat khi keo qua vi tri
   const targetY = 2670; // Vị trí Y mục tiêu (thay đổi giá trị này)
 
 const iconElement = document.querySelector('.iconmove'); // Chọn icon bằng class
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener('scroll', () => {
+//   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition <= targetY) {
-    iconElement.style.display = 'none';
-  } else {
-    iconElement.style.display = 'block';
-  }
-});
+//   if (scrollPosition <= targetY) {
+//     iconElement.style.display = 'none';
+//   } else {
+//     iconElement.style.display = 'block';
+//   }
+// });
 
 // popup anh
 // const imageGallery = document.querySelector('.a1');

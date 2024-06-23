@@ -17,7 +17,7 @@ font-family: 'Poppins'; */
   padding: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -100px;
+  top: -150px;
   z-index: 999;
 }
 
@@ -85,14 +85,4 @@ hr{
   border: 0;
   background: #d87f6e15;
   border-bottom: 1px solid #DF6951;
-}
-
-footer{
-  background-color: #DF6951;
-  height: 100px;
-}
-
-header{
-  background-color: #DF6951;
-  height: 100px;
 }

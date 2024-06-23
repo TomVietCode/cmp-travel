@@ -10,56 +10,13 @@ i {
   margin-right: .5rem;
 }
 
-.header-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: justify;
-  z-index: 1;
-}
-
-#explore{
-  color: #FFEFEC;
-  text-align: center;
-  font-weight: 600;
-  font-size: .8rem;
-  letter-spacing: 3px;
-  position: relative;
-  top: 20px;
-}
-
-#landscapes{
-  color: #FFEFEC;
-  font-family: "Yesteryear";
-  font-size: 7rem;
-}
-
-#current{
-  transform: scale(1.1);
-  font-weight: 700;
-}
-
-#current::after{
-  content: "";
-  display: block;
-  width: 75%;
-  height: 3px;
-  border-radius: 10px;
-  background-color: #ff6600;
-  position: absolute;
-  bottom: -7px; 
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .container {
   max-width: 1000px;
   margin: auto;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -124px;
+  top: -150px;
   z-index: 999;
 }
 
