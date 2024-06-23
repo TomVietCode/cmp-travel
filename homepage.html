@@ -30,7 +30,7 @@
           <li class="active"><a href="gallery.html">Gallery</a></li>
           <li class="active"><a href="blog.html">Blog</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
-          <li class="active"><a href="#">Feedback</a></li>
+          <li class="active"><a href="feedback.html">Feedback</a></li>
         </ul>
       </div>
       <a href="contact.html" id="git">Get in Touch</a>
@@ -158,11 +158,11 @@
       <div class="tour-packages">
         <!-- Tour Card 1 -->
         <div class="tour-card">
-          <img src="./assets/images/homepage/body/swit.png" alt="Switzerland">
+          <img src="https://images.unsplash.com/photo-1559511260-66a654ae982a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VmFuY291dmVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Switzerland">
           <div class="tour-info">
             <div class="tour-header">
               <div class="country-flag">
-                <img src="./assets/images/homepage/body/logoswit.png" alt="Switzerland Flag">
+                <img src="./assets/images/homepage/body/Vancouver.png" alt="Switzerland Flag">
               </div>
               <div class="tour-details">
                 <div class="tour-duration"><img src="./assets/images/homepage/body/calendar.png" alt="Calendar Icon"> 8
@@ -172,14 +172,14 @@
               </div>
             </div>
             <div class="tour-title">
-              <h2>Switzerland</h2>
+              <h2>Vancouver</h2>
               <div class="rating">
                 <img src="./assets/images/homepage/body/sao.png" alt="5 Stars">
               </div>
             </div>
             <p class="location"><img src="./assets/images/homepage/body/location.png" alt="Map Icon"> Europe</p>
             <div class="rating-price">
-              <span class="price">1,000 $ <del>1,200 $</del></span>
+              <span class="price">5,000$ <del>6,200 $</del></span>
             </div>
             <p class="description">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
               eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
@@ -189,11 +189,11 @@
         </div>
         <!-- Tour Card 2 -->
         <div class="tour-card">
-          <img src="./assets/images/homepage/body/amazon.png" alt="Amazon">
+          <img src="https://images.unsplash.com/photo-1559754417-c1304ca2f80f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHwxOXx8TGF1dGVyYnJ1bm5lbnxlbnwwfDB8fHwxNzE4NjE1NTQ3fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Amazon">
           <div class="tour-info">
             <div class="tour-header">
               <div class="country-flag">
-                <img src="./assets/images/homepage/body/logoamazon.png" alt="Brazil Flag">
+                <img src="./assets/images/homepage/body/Lauterbrunnen.png" alt="Brazil Flag">
               </div>
               <div class="tour-details">
                 <div class="tour-duration"><img src="./assets/images/homepage/body/calendar.png" alt="Calendar Icon"> 8
@@ -203,14 +203,14 @@
               </div>
             </div>
             <div class="tour-title">
-              <h2>Amazon</h2>
+              <h2>Lauterbrunnen</h2>
               <div class="rating">
                 <img src="./assets/images/homepage/body/sao.png" alt="5 Stars">
               </div>
             </div>
             <p class="location"><img src="./assets/images/homepage/body/location.png" alt="Map Icon"> Brazil</p>
             <div class="rating-price">
-              <span class="price">1,223 $ <del>1,200 $</del></span>
+              <span class="price">5,500$ <del>6,200 $</del></span>
             </div>
             <p class="description">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
               eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
@@ -220,11 +220,11 @@
         </div>
         <!-- Tour Card 3 -->
         <div class="tour-card">
-          <img src="./assets/images/homepage/body/giza.png" alt="Giza">
+          <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UG9ydG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Giza">
           <div class="tour-info">
             <div class="tour-header">
               <div class="country-flag">
-                <img src="./assets/images/homepage/body/logogiza.png" alt="Egypt Flag">
+                <img src="./assets/images/homepage/body/moscow.png" alt="Egypt Flag">
               </div>
               <div class="tour-details">
                 <div class="tour-duration"><img src="./assets/images/homepage/body/calendar.png" alt="Calendar Icon"> 8
@@ -234,14 +234,14 @@
               </div>
             </div>
             <div class="tour-title">
-              <h2>Giza</h2>
+              <h2>Porto</h2>
               <div class="rating">
                 <img src="./assets/images/homepage/body/sao.png" alt="5 Stars">
               </div>
             </div>
             <p class="location"><img src="./assets/images/homepage/body/location.png" alt="Map Icon"> Egypt</p>
             <div class="rating-price">
-              <span class="price">1,200 $ <del>1,200 $</del></span>
+              <span class="price">4,000$ <del>5,200 $</del></span>
             </div>
             <p class="description">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
               eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
@@ -261,6 +261,12 @@
   <!-- Footer -->
   <footer></footer>
   <script src="./assets/js/main.js"></script>
+  <script>
+    const tourCard = document.querySelector(".tour-card")
+    tourCard.addEventListener("click", function(){
+      window.location.href="detail.html?id=36"
+    })
+  </script>
 </body>
 
 </html>

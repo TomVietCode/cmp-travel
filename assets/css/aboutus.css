@@ -135,14 +135,16 @@ a {
   font-weight: 700;
   line-height: 27px;
   letter-spacing: 0.1em;
-  text-align: left;
+  text-align: center;
+  color: #df6951;
 }
 .title2 {
   font-family: "Volkhov", serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 71.04px;
-  text-align: left;
+  text-align: center;
+  color: #293462
 }
 /* promotion */
 .promotion{
@@ -224,7 +226,7 @@ a {
 
 .slide-wrapper {
   position: relative;
-  margin: 0px auto 250px;
+  margin: 0px auto 200px auto;
   height: 50vh;
 }
 
@@ -285,15 +287,8 @@ a {
   height: 363px; /* Card height */
   border-radius: 5px;
   overflow: hidden;
-  background-color: white;
+  background-color: white;  
   position: relative;
-  opacity: 0; /* Ẩn box ban đầu */
-    transform: translateY(50px); /* Di chuyển box xuống 50px */
-    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
-}
-.package{
-  opacity: 1; /* Hiển thị box khi xuất hiện trong vùng nhìn */
-  transform: translateY(0px); /* Di chuyển box về vị trí ban đầu */
 }
 
 .package.large {

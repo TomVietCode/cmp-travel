@@ -446,9 +446,15 @@ a {
   .country-flag {
     position: absolute;
     top: 270px;
-    width: 100px;
-    height: 100px;
-  }
+    width: 76.4px;
+    height: 76.4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
   .tour-details {
     display: flex;
     justify-content: space-between;
