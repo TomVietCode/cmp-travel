@@ -17,14 +17,10 @@ body {
 
 .main-box {
     width: 100%;
-    height: auto;
+    height: 1800px;
     margin: 0 auto;
     background: #f0faff;
-    box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
     text-align: center;
-    /* position: absolute;
-    left: 268px;
-    top: 610px; */
     z-index: 1;
 }
 
@@ -187,6 +183,8 @@ body {
     display: flex;
     margin-bottom: 40px;
     box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
+    transform: translateY(50px); /* Di chuyển box xuống 50px */
+    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
 }
 
 .box img {
@@ -194,11 +192,6 @@ body {
     width: auto;
     margin-right: 30px;
 }
-.box {
-    opacity: 0; /* Ẩn box ban đầu */
-    transform: translateY(50px); /* Di chuyển box xuống 50px */
-    transition: all 0.5s ease; /* Hiệu ứng chuyển tiếp mượt mà */
-  }
   
 .box.in-view {
     opacity: 1; /* Hiển thị box khi xuất hiện trong vùng nhìn */
@@ -230,146 +223,6 @@ body {
     /* Phóng to ảnh khi di chuột qua 10% */
 }
 
-
-
-
-
-
-/* header */
-.header {
-    background-image: url('../images/contactbg.png');
-    background-position: center;
-    background-size: cover;
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-
-.nav-top-bar {
-    height: 100px;
-    padding: 0 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-}
-
-#logo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    margin-right: 60px;
-}
-.icon-container {
-    position: fixed; /* Cố định vị trí icon */
-    bottom: 30px; /* Khoảng cách từ dưới đáy trang */
-    right: 10px; /* Khoảng cách từ mép phải */
-    z-index: 100; /* Đảm bảo icon hiển thị trên các phần tử khác */
-    transform: translate(-50%, -50%); /* Di chuyển icon về trung tâm */
-    display: flex; /* Chuyển đổi container thành flexbox */
-    align-items: center; /* Canh giữa các mục theo chiều dọc */
-  }
-  
-  .icon-container img {
-    width: 70px;
-    height: auto; /* Tự động điều chỉnh chiều cao */
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-    /* Tạo hiệu ứng chuyển đổi mượt mà */
-  }
-  .icon-container img:hover {
-    transform: scale(1.05);
-  }
-
-
-
-#logo:hover {
-    transform: scale(1.1);
-}
-
-.nav-bar {
-    text-align: center;
-}
-
-.nav-bar>ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-
-.nav-bar li {
-    display: inline;
-    font-family: 'Circular Std', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 21.5px;
-    position: relative;
-    white-space: nowrap;
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease, all 0.3s ease;
-}
-
-.nav-bar .active:hover {
-    transform: scale(1.1);
-    font-weight: 700;
-}
-
-#current {
-    transform: scale(1.1);
-    font-weight: 700;
-}
-
-#current::after {
-    content: "";
-    display: block;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-bar li.active::after {
-    content: "";
-    display: block;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.nav-bar li.active:hover::after {
-    opacity: 1;
-}
-
-.nav-bar li a {
-    display: block;
-    color: inherit;
-    /* Đảm bảo màu chữ của liên kết kế thừa từ li */
-    text-decoration: none;
-}
-
 #gallery {
     transition: transform 0.5s ease-in-out;
     /* Tạo hiệu ứng chuyển đổi mượt mà */
@@ -378,39 +231,4 @@ body {
 #gallery:hover {
     transform: scale(1.05);
     /* Phóng to ảnh khi di chuột qua 10% */
-}
-
-
-/* PAGINATION */
-.listPage li {
-    /* padding: 5px 15px; */
-    background: #ffffff;
-    color: #ff6407;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .1);
-    font-family: "Poppins", sans-serif;
-    width: 30px;
-    height: 30px;
-    list-style: none;
-    margin-right: 30px;
-    /* padding-left: 20px; */
-    text-align: center;
-    line-height: 30px;
-    
-}
-
-.listPage li.selected,
-.listPage li:hover,
-.listPage li:active,
-.listPage li:focus {
-    background: #ff6407;
-    color: #ffffff;
-}
-.listPage {
-    display: flex;
-    margin-left: 650px;
-}
-.listPage .active {
-    background: #ff6407;
-    color: #ffffff;
 }
