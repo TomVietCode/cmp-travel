@@ -99,13 +99,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
         currentPage = i;
-        document.documentElement.scrollTop = 0;
+        document.documentElement.scrollTop = 430;
         displayPage(data, currentPage);
       });
       paginationContainer.appendChild(pageButton);
     }
   };
-  const showLoader = setTimeout(() => {
+  
+  setTimeout(() => {
     loaderBox.classList.add("d-none")
     loader.classList.add("d-none")
     displayPage(data, 1);

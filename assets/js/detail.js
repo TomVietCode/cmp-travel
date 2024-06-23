@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  document.documentElement.scrollTop = 430;
   //Get id from url
   const urlParams = new URLSearchParams(window.location.search);
   const cardId = urlParams.get("id");
@@ -14,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   var objectLocation = data.find((obj) => obj.id == cardId);
   // console.log(objectLocation)
 
-  document.title = `${objectLocation.name}`
-  
+  document.title = `${objectLocation.name}`;
+
   const container = document.querySelector(".container");
   const row = document.querySelector(".row");
 
@@ -94,7 +95,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   container.appendChild(backBox);
   container.appendChild(row);
 
-  
   // Get Library image by using api from unsplash
   const accessKey = "r4tOZXvBx-YGL47ar91HwJIEfL9MqOnzicNl81aaQ-M";
   const query = `${objectLocation.name}`; // Search key
