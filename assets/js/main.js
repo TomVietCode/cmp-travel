@@ -52,7 +52,7 @@ if(footer){
 // Scroll Event
 const scrollUpIcon = document.getElementById('scrollUpIcon');
 const scrollDownIcon = document.getElementById('scrollDownIcon');
-const scrollToPosition = 730; // Vị trí cuộn theo pixel (ví dụ: 500px từ đầu trang)
+const scrollToPosition = 750; // Vị trí cuộn theo pixel (ví dụ: 500px từ đầu trang)
 
 let isAtScrollDownPosition = false; // Biến cờ để theo dõi vị trí cuộn
 if(scrollDownIcon && scrollUpIcon){

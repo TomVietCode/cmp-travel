@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed|Yesteryear">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -25,9 +25,9 @@
       <div class="nav-bar">
         <ul>
           <li class="active"><a href="homepage.html">Home</a></li>
-          <li><a href="#" id="current" style="color: #ff6600";>About Us</a></li>
+          <li><a href="#" id="current" style="color: #ff6600;">About Us</a></li>
           <li class="active"><a href="destination.html"">Destination</a></li>
-          <li class="active"><a href="gallery.html">Gallery</a></li>
+          <li class=" active"><a href="gallery.html">Gallery</a></li>
           <li class="active"><a href="blog.html">Blog</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
           <li class="active"><a href="feedback.html">Feedback</a></li>
@@ -39,75 +39,81 @@
   <section class="body">
     <!-- promotion -->
     <section class="promotion">
-        <section class="hero">
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-md-6">
-                    <h1 class="title1">Promotion</h1>
-                      <h2 class="title2">We Provide You Best Europe Sightseeing Tours</h2>
-                      <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
-                      <button class="view-packages">View Packages</button>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="image-container">
-                          <img src="./assets/images/aboutus/Ellipse 626.png" class="img-fluid rounded-circle" alt="Europe Sightseeing">
-                      </div>
-                  </div>
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h1 class="title1">Promotion</h1>
+              <h2 class="title2">We Provide You Best Sightseeing Tours</h2>
+              <p class="description">"Join our captivating sightseeing tours, thoughtfully designed to highlight the
+                most fascinating aspects of each destination. Whether you're exploring historical sites, stunning
+                natural landscapes, or vibrant city scenes, our knowledgeable guides ensure you experience the best of
+                every place we visit."</p>
+              <button class="buttons">View Packages</button>
+            </div>
+            <div class="col-md-6">
+              <div class="image-container">
+                <img src="./assets/images/aboutus/Ellipse 626.png" class="img-fluid rounded-circle"
+                  alt="Europe Sightseeing">
               </div>
-          </div>
-      </section>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </section>
-    <!-- video -->
-     <section class="video" id="video">
-      <div class="adventuretitle">
-        <h1 class="title1">Adventure is worthwhile</h1>
-        <h2 class="title2">Discover new places with us, adventure awaits</h2>
-      </div>
-      <div class="controls">
-        <div class="slide-wrapper">
-          <div class="slider">
-            <div class="slider">
-              <video src="./assets/images/aboutus/italy.mp4" id="video-1" muted autoplay preload="auto"></video>
-              <video src="./assets/images/aboutus/maldives.mp4" id="video-2" muted  preload="auto"></video>
-              <video src="./assets/images/aboutus/japan.mp4" id="video-3" muted  preload="auto"></video>
-            </div>            
-          </div>
-          <div class="slider-nav">
-            <a href="#video-1"></a>
-            <a href="#video-2"></a>
-            <a href="#video-3"></a>
+            </div>
           </div>
         </div>
+      </section>
+    </section>
+    <!-- video -->
+    <div id="carouselExampleIndicators" class="carousel slide video" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-tdata-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="./assets/images/aboutus/italy.mp4" id="video-1" muted autoplay preload="auto"></video>
+        </div>
+        <div class="carousel-item">
+          <video src="./assets/images/aboutus/maldives.mp4" id="video-2" muted autoplay preload="auto"></video>
+        </div>
+        <div class="carousel-item">
+          <video src="./assets/images/aboutus/japan.mp4" id="video-3" muted autoplay preload="auto"></video>
+        </div>
       </div>
-      <script src="./assets/js/aboutus.js"></script>
-     </section>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     <!-- trend -->
     <section class="trend">
       <div class="images">
-          <img src="./assets/images/aboutus/2anh.png" alt="Polaroid 1" class="polaroid">
+        <img src="./assets/images/aboutus/2anh.png" alt="Polaroid 1" class="polaroid">
       </div>
       <div class="content">
-          <h2 class="title1">TREND</h2>
-          <h1 class="title2">Our Popular Tour Plans</h1>
-          <p class="description">Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium.</p>
-          <div class="stats">
-              <div class="stat">
-                  <img src="./assets/images/aboutus/78.png" alt="Vacations" class="stat-image">
-              </div>
-              <div class="stat">
-                  <img src="./assets/images/aboutus/55.png" alt="Honeymoon" class="stat-image">
-              </div>
-              <div class="stat">
-                  <img src="./assets/images/aboutus/30.png" alt="Musical Events" class="stat-image">
-              </div>
+        <h2 class="title1">TREND</h2>
+        <h1 class="title2">Our Popular Tour Plans</h1>
+        <p class="description">"Discover a range of captivating tour plans that cater to diverse interests and
+          preferences. From scenic getaways and romantic escapes to cultural explorations and vibrant musical events,
+          our popular tour options promise unforgettable experiences in renowned destinations worldwide."</p>
+        <div class="stats">
+          <div class="stat">
+            <img src="./assets/images/aboutus/78.png" alt="Vacations" class="stat-image">
           </div>
+          <div class="stat">
+            <img src="./assets/images/aboutus/55.png" alt="Honeymoon" class="stat-image">
+          </div>
+          <div class="stat">
+            <img src="./assets/images/aboutus/30.png" alt="Musical Events" class="stat-image">
+          </div>
+        </div>
       </div>
       <img src="./assets/images/aboutus/voso.png" alt="Shell" class="shell">
-  </section>
-  <!-- explore -->
+    </section>
+    <!-- explore -->
     <section class="explore_more">
       <h1 class="title1">Explore more</h1>
       <h2 class="title2">Our International Packages</h2>
@@ -116,83 +122,72 @@
           <div class="image"><img src="./assets/images/aboutus/rio.png" alt=""></div>
           <div class="info">
             <h2>Barcelona</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/swit.png" alt=""></div>
           <div class="info">
             <h2>Switzerland</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/barce2.png" alt=""></div>
           <div class="info">
             <h2>Barcelona</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/tommorow.png" alt=""></div>
           <div class="info">
             <h2>Tomorrowland</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/los.png" alt=""></div>
           <div class="info">
             <h2>Los Angeles</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/barce.png" alt=""></div>
           <div class="info">
             <h2>Rio de Janeiro</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/india.png" alt=""></div>
           <div class="info">
             <h2>India</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/barce3.png" alt=""></div>
           <div class="info">
             <h2>Barcelona</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/maldives.png" alt=""></div>
           <div class="info">
             <h2>Maldives</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/pakistan2.png" alt=""></div>
           <div class="info">
             <h2>Barcelona</h2>
-            <p>$840</p>
           </div>
         </div>
         <div class="package">
           <div class="image"><img src="./assets/images/aboutus/pakistan.png" alt=""></div>
           <div class="info">
             <h2>Pakistan</h2>
-            <p>$840</p>
           </div>
         </div>
       </section>
     </section>
-    
-    
+
+
   </section>
   <!-- Scroll Icon -->
   <div class="icon-container">
@@ -201,8 +196,21 @@
   </div>
   <!-- Footer -->
   <footer></footer>
+  <script>
+    const viewPackage = document.querySelector(".buttons")
+    viewPackage.addEventListener("click", () => {
+      window.location.href = "destination.html"
+    })
+    const carouselControlNext = document.querySelector(".carousel-control-next")
+    setInterval(() => {
+      carouselControlNext.click()
+    }, 60000)
 
+  </script>
   <script src="./assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,3 @@
-/* font-family: 'Volkhov';
-font-family: 'Circular Std', 'Roboto Condensed';
-background: #DF6951;
-font-family: 'Poppins'; */
-
 *{
   margin: 0;
   padding: 0;
@@ -77,8 +72,11 @@ hr{
 
 .btn{
   background-color: #DF6951;
-  color: white;
-  
+  color: white; 
+}
+.btn:hover{
+  background-color: #d34d32;
+  color: white; 
 }
 
 .form-control:focus, .form-control:hover{
