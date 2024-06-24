@@ -70,9 +70,9 @@ a {
   position: relative;
   white-space: nowrap;
   color: white;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
-    all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
+
 .nav-bar .active:hover {
   transform: scale(1.1);
   font-weight: 700;

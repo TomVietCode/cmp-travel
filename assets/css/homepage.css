@@ -13,109 +13,6 @@ a {
     color: white;
 }
 
-.header {
-    background-image: url('../images/header-bg/home-bg.jpg');
-    background-position: center;
-    background-size: cover;
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-
-.nav-top-bar {
-    height: 100px;
-    padding: 0 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-}
-#logo{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    margin-right: 60px;
-}
-#logo:hover{
-    transform: scale(1.1);
-}
-
-.nav-bar{
-    text-align: center;
-    height: 21.5px;
-}
-.nav-bar > ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-
-.nav-bar li {
-    display: inline;
-    font-family: 'Circular Std', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 21.5px;
-    position: relative;
-    white-space: nowrap;
-    color: white;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,all 0.3s ease-in-out;
-}
-.nav-bar .active:hover {
-    transform: scale(1.1);
-    font-weight: 700;
-}
-#current{
-    transform: scale(1.1);
-    font-weight: 700;
-}
-  
-#current::after{
-    content: "";
-    display: block;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -7px; 
-    left: 50%;
-    transform: translateX(-50%);
-}
-.nav-bar li.active::after{
-    content: "";
-    display: block;
-    width: 75%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -7px; 
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.nav-bar li.active:hover::after{
-    opacity: 1;
-}
-.nav-bar li a {
-    display: block;
-    color: inherit; /* Đảm bảo màu chữ của liên kết kế thừa từ li */
-    text-decoration: none;
-}
 #git {
     background-color: #DF6951;
     color: white;
@@ -123,15 +20,14 @@ a {
     display: inline-block !important;
     padding: 1px 20px;
     cursor: pointer;
-    font-family: 'Circular Std', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 10px;
     line-height: 40px;
     font-size: .8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out, background-color 0.3 ease-in-out, font-weight 0.3 ease-in-out;
+    transition: all .5s ease;
 }
 #git:hover{
     transform: scale(1.05);
@@ -275,22 +171,20 @@ a {
     }
 } */
 .partner{
-    height: 200px;
+    height: 150px;
     background-color: #F7F7F7;
-    opacity: 0; /* Ẩn box ban đầu */
-   
 }
 
 .partner ul{
-    padding: 75px 171px;
+    padding: 50px;
     display: flex;
     list-style: none;
+    gap: 120px;
 }
-.partner ul
+
 .partner ul li{
-    padding-right: 171px;
     opacity: 44%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 .partner ul li:hover{
     opacity: 100%;
@@ -298,15 +192,14 @@ a {
 }
 
 /* Body------------------------------------------------------------------------ */
-/* category */
+/* Category */
 .category {
-    margin: 200px;
-    height: 50vh;
+    margin: 70px 0;
+    height: 400px;
     transition: transform 0.3s ease-in-out;
   }
   .title1 {
     text-align: center;
-    font-family: "Poppins", sans-serif;
     color: #df6951;
     font-size: 18px;
     font-weight: 600;
@@ -326,43 +219,33 @@ a {
   }
   
   .services {
-    font-family: "Poppins", sans-serif;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 150px;
-    
   }
   
   .service-item {
     background: white;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
-    width: 195px;
-    height: 234px;
+    width: 235px;
+    height: 315px;
     position: relative;
     display: flex; /* Bật Flexbox */
     flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
     justify-content: center; /* Căn giữa theo chiều dọc */
     align-items: center; /* Căn giữa theo chiều ngang */
-    transition: transform 0.3s ease-in-out;
-    height: 314px;
-  }
-  
-  .service-item:hover {
-    transform: scale(1.05);
-  }
+    transition: all .5s ease-in-out;
+    }
   
   .service-item img {
     width: 72px;
     height: 72px;
     margin-bottom: 30px;
   }
-  .hand {
-    width: 30px;
-    height: 30px;
-  }
+
   .category h2 {
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -373,7 +256,6 @@ a {
   }
   
   .category p {
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -384,11 +266,8 @@ a {
   }
   
   .main-service {
-    background: white;
-    position: relative;
-    border-radius: 30px;
-    width: 250px;
-    height: 314px;
+    width: 227px;
+    height: 315px;
   }
   
   .main-service .overlay {
@@ -400,7 +279,80 @@ a {
     border-radius: 30px;
     z-index: -1;
   }
-  /* trendy */
+  
+  .service-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* fast and easy */
+  .fast-easy{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 130px;
+  }
+
+  .left{
+    width: 30%;
+  }
+
+  .left h2{
+    text-align: left;
+  }
+
+  .left h1{
+    text-align: left;
+  }
+
+  .step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .ima{
+    margin-right: 20px;
+  }
+  
+  .ima img{
+    width: 40px;
+    height: 40px;
+  }
+  .right{
+    overflow: hidden;
+  }
+  .right img{
+    height: 600px;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .content{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.92px;
+  text-align: left;
+  color:#5E6282;
+  }
+  .cont h3{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.92px;
+  text-align: left;
+  color:#5E6282;
+  margin-bottom: 8px;
+  }
+
+  /* make holiday */
+  .makeholiday{
+    height: 400px;
+    background-image: url(../images/homepage/body/holiday.png);
+    margin-bottom: 100px;
+  }
+
+  /* Trendy */
   .trending-tours {
     padding: 20px;
     font-family: "Poppins", sans-serif;
@@ -409,7 +361,7 @@ a {
   .tour-packages {
     display: flex;
     justify-content: space-between;
-    margin: 0px 150px;
+    margin: 0px 50px;
     margin-bottom: 150px;
   }
   
@@ -417,20 +369,22 @@ a {
     background: #fff;
     border-radius: 25px;
     overflow: hidden;
-    margin: 10px;
-    width: calc(33% - 20px);
-    transition: transform 0.3s;
+    width: calc(31% - 20px);
+    transition: all 0.5s ease;
     position: relative;
-    width: 393px;
   }
   
   .tour-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   .tour-card img {
     width: 100%;
-    height: auto;
+  }
+
+  .thumbnail{
+    height: 244px;
   }
   
   .tour-info {
@@ -443,16 +397,14 @@ a {
     justify-content: space-between;
     margin-bottom: 10px;
   }
+
   .country-flag {
     position: absolute;
-    top: 270px;
+    top: 190px;
     width: 76.4px;
     height: 76.4px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border: 2px solid white;
 }
 
   .tour-details {
@@ -483,6 +435,9 @@ a {
     justify-content: space-between;
   }
   
+  .rating i{
+    color: #FFBA0A;
+  }
   .tour-title h2 {
     font-size: 29.03px;
     font-weight: 700;
@@ -564,49 +519,5 @@ a {
   button:hover {
     background-color: #d35400;
   }
-  /* fast and easy */
-  .fast-easy{
-    display: flex;
-    margin: 150px;
-  }
-  .fast-easy .left h2{
-    text-align: left;
-  }
-  .fast-easy .left h1{
-    text-align: left;
-  }
-  .step{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .ima{
-    margin-right: 20px;
-  }
-  .ima img{
-  width: 100%;
-  }
-  .content{
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.92px;
-  text-align: left;
-  color:#5E6282;
-  }
-  .cont h3{
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19.92px;
-  text-align: left;
-  color:#5E6282;
-  margin-bottom: 8px;
-  }
-  /* make holiday */
-  .makeholiday{
-    height: 399px;
-    background-image: url(../images/homepage/body/holiday.png);
-    margin-bottom: 200px;
-  }
+  
+
