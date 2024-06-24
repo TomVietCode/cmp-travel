@@ -13,6 +13,34 @@ a {
     color: white;
 }
 
+.header{
+  animation-name: changeImages;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+@keyframes changeImages {
+  0% {
+    background-image: url("../images/homepage-image/header-image-4.jpg");
+  }
+  25% {
+    background-image: url("../images/homepage-image/header-image-2.jpg");
+  }
+  50% {
+    background-image: url("../images/homepage-image/header-image-3.jpg");
+  }
+  75% {
+    background-image: url("../images/homepage-image/header-image-1.jpg");
+  }
+  100% {
+    background-image: url("../images/homepage-image/header-image-4.jpg");
+  }
+}
+
 #git {
     background-color: #DF6951;
     color: white;
