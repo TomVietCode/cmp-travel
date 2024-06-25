@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const loader = document.querySelector(".loader")
   // Fetch data from data.json
   try {
-    const response = await fetch("data.json");
+    const response = await fetch("./data/data.json");
     var data = await response.json();
   } catch (error) {
     console.log(error);

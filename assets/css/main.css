@@ -31,11 +31,13 @@ a {
 
 .nav-top-bar {
   height: 100px;
+  width: 100%;
   padding: 0 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 2;
 }
 
@@ -320,6 +322,7 @@ footer {
 
 .email-box img {
   width: 20px;
+  height: auto;
   margin-right: 10px;
 }
 
