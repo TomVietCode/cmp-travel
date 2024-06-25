@@ -59,6 +59,12 @@ a {
   color: black;
   margin: 40px 60px 40px 0px;
 }
+.image-container img{
+  transition: transform ease 0.3 ;
+}
+.image-container img:hover{
+  transform: scale(1.05);
+}
 /* Add styles for decorative lines using pseudo-elements */
 .image-container::before,
 .image-container::after {
@@ -129,12 +135,20 @@ a {
 }
 
 .package {
+  width: 363px; /* Card width */
+  height: 363px; /* Card height */
   border-radius: 5px;
   overflow: hidden;
   background-color: white;  
   position: relative;
 }
 
+.package img{
+  transition: transform ease 0.3s;
+}
+.package img:hover{
+  transform:scale(1.2);
+}
 .package.large {
   grid-row: span 2; /* Span 2 rows */
   height: calc(2 * 363px + 50px); /* 2 times height + gap */
@@ -163,6 +177,7 @@ a {
   margin-left: 30px;
   justify-content: space-between; /* Space between the title and price */
   align-items: center;
+  justify-items: center;
   font-family: "Poppins", sans-serif; 
 }
 
@@ -173,6 +188,7 @@ a {
   font-weight: 600;
   line-height: 33px;
   text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .explore p {
@@ -180,6 +196,7 @@ a {
   font-weight: 600;
   line-height: 33px;
   text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 /* trend */
 .trend {

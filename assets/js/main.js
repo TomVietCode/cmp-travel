@@ -121,3 +121,27 @@ if(buttonSubmit){
   })
 }
 // End Form Submit
+
+// Popup Image
+const imgs = document.querySelector('img');
+const popup = document.getElementById('popup');
+const popupImg = document.getElementById('popup-img');
+const close = document.querySelector('.close');
+
+console.log(imgs)
+img.onclick = function () {
+  popup.style.display = "block";
+  popupImg.src = this.src.replace("small-",
+  "large-"); // Đảm bảo bạn có ảnh lớn với tên file tương ứng
+}
+
+close.onclick = function () {
+  popup.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == popup) {
+      popup.style.display = "none";
+  }
+}
+// End Popup Image

@@ -105,8 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
     const data = await response.json();
     const listImages = data.results
-    console.log(response)
-
+    
     // console.log(listImages)
     const gallery = document.querySelector(".gallery")
     const galleryPictures = document.querySelector(".gallery-pictures")
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       galleryPictures.appendChild(col4)
     })
 
-    console.log(galleryPictures)
     gallery.appendChild(galleryPictures)
     container.appendChild(gallery);
 
