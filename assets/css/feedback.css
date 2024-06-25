@@ -9,7 +9,7 @@ i{
 }
 .main-body{
     margin: 50px;
-    padding:300px;
+    padding:10%;
     background-image: url("../images/feedback/background.jpg");
     background-size: cover;
     position: relative;
