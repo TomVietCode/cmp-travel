@@ -186,7 +186,7 @@ a {
     padding: 50px;
     display: flex;
     list-style: none;
-    gap: 120px;
+    gap: 200px;
 }
 
 .partner ul li{
@@ -407,9 +407,9 @@ a {
 
   .country-flag {
     position: absolute;
-    top: 190px;
-    width: 76.4px;
-    height: 76.4px;
+    top: 210px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 2px solid white;
 }
