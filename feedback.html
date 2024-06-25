@@ -4,33 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed Back</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov|Poppins|Roboto+Condensed|Yesteryear">
     <link rel="stylesheet" href="./assets/css/feedback.css">
     <link rel="stylesheet" href="./assets/css/aboutus.css">
-    <link rel="stylesheet" href="./assets/css/homepage.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <header class="header" style="background-image: url('./assets/images/header-bg/destination-bg.png');">
+  <header class="header" style="background-image: url('./assets/images/homepage-image/header-image-2.jpg');">
     <div class="overlay"></div>
     <div class="header-text">
       <div id="up-title">READ</div>
-      <div id="down-title">About Us</div>
+      <div id="down-title">Our Feedback</div>
     </div>
     <div class="nav-top-bar">
       <a href="homepage.html"><img src="./assets/images/header/logo-removebg-preview.png" alt="" id="logo" /></a>
       <div class="nav-bar">
         <ul>
           <li class="active"><a href="homepage.html">Home</a></li>
-          <li class="active"><a href="destination.html"">About Us</a></li>
-          <li class="active"><a href="destination.html"">Destination</a></li>
+          <li class="active"><a href="destination.html">About Us</a></li>
+          <li class="active"><a href="destination.html">Destination</a></li>
           <li class="active"><a href="gallery.html">Gallery</a></li>
           <li class="active"><a href="blog.html">Blog</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
@@ -43,17 +37,62 @@
         <h1 class="title1">PROMOTION</h1>
         <h2 class="title2">See What Our Clients Say About Us</h2>
         <div class="clientfb">
-            <img src="./assets/images/feedback/client2.jpg" alt="" class="clientimg">
+            <img src="" alt="" class="clientimg">
             <div class="text">
                 <img src="./assets/images/feedback/big.png" alt="" id="bigicon">
-                <p>Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis. <img src="./assets/images/feedback/small.png" alt=""></p>
-                <h3 class="client">Hoang Quoc Manh - Wet Boy</h3>
-                <p>Rating: 4.9 <i class="fa-solid fa-star"></i></p>
+                <p class="review"><img src="./assets/images/feedback/small.png" alt=""></p>
+                <h3 class="client"></h3>
+                <p class="rating"><i class="fa-solid fa-star"></i></p>
                 <img src="./assets/images/feedback/trai.png" alt="" id="trai">
                 <img src="./assets/images/feedback/phai.png" alt="" id="phai">
             </div>
         </div>
         <img src="./assets/images/feedback/Travel_Concepts_2 1.png" alt="" id="travel">
+        
+        <!-- Form feedback -->
+        <div class="container mt-5">
+          <h2 class="mb-4 title2">Tell us about your experience</h2>
+          <form>
+              <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email address *</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                  <label for="travelDate">Date of Travel</label>
+                  <input type="date" class="form-control" id="travelDate">
+              </div>
+              <div class="form-group">
+                  <label for="rating">Rating*</label>
+                  <select class="form-control" id="rating" required>
+                      <option value="">-- Choose --</option>
+                      <option value="1">★ - Very Poor</option>
+                      <option value="2">★★ - Poor</option>
+                      <option value="3">★★★ - Average</option>
+                      <option value="4">★★★★ - Good</option>
+                      <option value="5">★★★★★ - Excellent</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="feedback">Feedback</label>
+                  <textarea class="form-control" id="feedback" rows="4" placeholder="Write your feedback here"></textarea>
+              </div>
+
+              <div class="alert alert-success d-none" role="alert">
+                Your information was sent successfully!
+              </div>
+              <div class="alert alert-danger d-none" role="alert">
+                Please enter complete information in the required fields
+              </div>
+
+              <div class="col text-center">
+                <button type="submit" class="btn text-center">Submit</button>      
+              </div>
+          </form>
+      </div>
     </div>
     <div class="icon-container">
       <i id="scrollDownIcon"><img src="./assets/images/blog/xuong.png" alt="Cuộn xuống"></i>
@@ -64,6 +103,9 @@
   
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/feedback.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 </body>
 </html>

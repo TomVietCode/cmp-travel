@@ -52,7 +52,7 @@ if(footer){
 // Scroll Event
 const scrollUpIcon = document.getElementById('scrollUpIcon');
 const scrollDownIcon = document.getElementById('scrollDownIcon');
-const scrollToPosition = 750; // Vị trí cuộn theo pixel (ví dụ: 500px từ đầu trang)
+const scrollToPosition = window.innerHeight; // Vị trí cuộn theo pixel (ví dụ: 500px từ đầu trang)
 
 let isAtScrollDownPosition = false; // Biến cờ để theo dõi vị trí cuộn
 if(scrollDownIcon && scrollUpIcon){
@@ -90,3 +90,34 @@ if(scrollDownIcon && scrollUpIcon){
   scrollUpIcon.style.display = 'none';
 }
 // End Scroll Event
+
+// Form Submit
+const buttonSubmit = document.querySelector("button[type=submit]")
+if(buttonSubmit){
+  const formControl = document.querySelectorAll(".form-control[required]")
+  console.log(formControl)
+  const formControlArray = Array.from(formControl)
+  buttonSubmit.addEventListener("click", (e) => {
+    const checkValid = formControlArray.some(input => input.value == "")
+    const alertSuccess = document.querySelector(".alert-success")
+    const alertFail = document.querySelector(".alert-danger")
+    
+    if(checkValid){
+      alertSuccess.classList.add("d-none")
+      alertFail.classList.remove("d-none")
+    }else{
+      alertFail.classList.add("d-none")
+      alertSuccess.classList.remove("d-none")
+      formControlArray.forEach(input => input.value = "")
+
+      e.preventDefault()
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 4000);
+    }
+  })
+}
+// End Form Submit
