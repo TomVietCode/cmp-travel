@@ -7,7 +7,7 @@ viewPackage.addEventListener("click", () => {
 const carouselControlNext = document.querySelector(".carousel-control-next");
 setInterval(() => {
   carouselControlNext.click();
-}, 2000);
+}, 30000);
 
 // Lấy tất cả các phần tử có class "package"
 const packageElements = document.querySelectorAll(".package");
