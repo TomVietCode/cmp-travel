@@ -23,6 +23,7 @@ a {
 .overlay {
   background: rgba(0, 0, 0, 0.5);
 }
+
 @keyframes changeImages {
   0% {
     background-image: url("../images/homepage-image/header-image-4.jpg");
@@ -361,7 +362,7 @@ a {
   /* make holiday */
   .makeholiday{
     height: 400px;
-    background-image: url(../images/homepage/body/holiday.png);
+    background-image: url("../images/homepage/body/holiday.png");
     margin-bottom: 100px;
   }
 

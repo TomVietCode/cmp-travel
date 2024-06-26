@@ -2,6 +2,7 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
+    { "src": "*.html", "use": "@vercel/static" },
     { "src": "assets/css/**", "use": "@vercel/static" },
     { "src": "assets/js/**", "use": "@vercel/static" },
     { "src": "assets/images/**", "use": "@vercel/static" }
