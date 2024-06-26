@@ -5,7 +5,8 @@
     { "src": "*.html", "use": "@vercel/static" },
     { "src": "assets/css/**", "use": "@vercel/static" },
     { "src": "assets/js/**", "use": "@vercel/static" },
-    { "src": "assets/images/**", "use": "@vercel/static" }
+    { "src": "assets/images/**", "use": "@vercel/static" },
+    { "src": "data/**/*.json", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/assets/css/(.*)", "dest": "/assets/css/$1" },
