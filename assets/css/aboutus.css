@@ -135,8 +135,7 @@ a {
 }
 
 .package {
-  width: 363px; /* Card width */
-  height: 363px; /* Card height */
+  height: 40vh;
   border-radius: 5px;
   overflow: hidden;
   background-color: white;  
@@ -151,7 +150,7 @@ a {
 }
 .package.large {
   grid-row: span 2; /* Span 2 rows */
-  height: calc(2 * 363px + 50px); /* 2 times height + gap */
+  height: calc(2 * 40vh + 35px); /* 2 times height + gap */
 }
 
 .image {
