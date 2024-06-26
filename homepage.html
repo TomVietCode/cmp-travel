@@ -61,11 +61,11 @@
   </header>
   <div class="partner">
     <ul>
-      <li><img src="./assets/images/header/partner1.png" alt=""></li>
-      <li><img src="./assets/images/header/partner2.png" alt=""></li>
-      <li><img src="./assets/images/header/partner3.png" alt=""></li>
-      <li><img src="./assets/images/header/partner4.png" alt=""></li>
-      <li><img src="./assets/images/header/partner5.png" alt=""></li>
+      <li><img class="reveal" src="./assets/images/header/partner1.png" alt=""></li>
+      <li><img class="reveal" src="./assets/images/header/partner2.png" alt=""></li>
+      <li><img class="reveal" src="./assets/images/header/partner3.png" alt=""></li>
+      <li><img class="reveal" src="./assets/images/header/partner4.png" alt=""></li>
+      <li><img class="reveal" src="./assets/images/header/partner5.png" alt=""></li>
     </ul>
   </div>
 
@@ -76,23 +76,23 @@
       <div class="container">
         <h1 class="title2">We Offer Best Services</h1>
         <div class="services">
-          <div class="service-item">
+          <div class="service-item slide-right">
             <img src="./assets/images/homepage/body/tourguide.png" alt="Guided Tours Icon">
             <h2>Guided Tours</h2>
             <p>Explore exciting destinations with expert guides leading the way.</p>
           </div>
-          <div class="service-item main-service">
+          <div class="service-item main-service slide-down">
             <img src="./assets/images/homepage/body/flight.png" alt="Best Flights Icon">
             <h2>Best Flights Options</h2>
             <p>Find and book the best deals on flights for your next trip.</p>
-            <div class="overlay"></div>
+            <div class="square"></div>
           </div>
-          <div class="service-item">
+          <div class="service-item slide-up">
             <img src="./assets/images/homepage/body/hand.png" alt="Religious Tours Icon" class="hand">
             <h2>Religious Tours</h2>
             <p>Visit holy sites and spiritual locations around the world.</p>
           </div>
-          <div class="service-item">
+          <div class="service-item slide-left">
             <img src="./assets/images/homepage/body/medical.png" alt="Medical Insurance Icon">
             <h2>Medical Insurance</h2>
             <p>Get comprehensive medical insurance for your travels and stay safe.</p>
@@ -100,10 +100,10 @@
         </div>
       </div>
     </section>
-    
+
     <!-- fast and easy -->
     <section class="fast-easy">
-      <div class="left">
+      <div class="left slide-right">
         <h2 class="title1">Fast and Easy</h2>
         <h1 class="title2">Get Your Favourite Resort Bookings</h1>
         <div class="step">
@@ -135,11 +135,11 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right slide-up">
         <img src="./assets/images/homepage/body/Illustration.png" alt="">
       </div>
     </section>
-    <section class="makeholiday">
+    <section class="makeholiday reveal">
     </section>
     <!-- trendy -->
     <section class="trending-tours">
@@ -147,7 +147,7 @@
       <h1 class="title2">Our Trending Tour Packages</h1>
       <div class="tour-packages">
         <!-- Tour Card 1 -->
-        <div id="paris" class="tour-card">
+        <div id="paris" class="tour-card reveal-delay">
           <img
             src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHwzfHxQYXJpc3xlbnwwfHx8fDE3MTkyMzUxOTl8MA&ixlib=rb-4.0.3&q=80&w=1080"
             alt="Paris" class="thumbnail">
@@ -186,7 +186,7 @@
           </div>
         </div>
         <!-- Tour Card 2 -->
-        <div id="switzerland" class="tour-card">
+        <div id="switzerland" class="tour-card reveal-delay">
           <img
             src="https://images.unsplash.com/photo-1559754417-c1304ca2f80f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHwxOXx8TGF1dGVyYnJ1bm5lbnxlbnwwfDB8fHwxNzE4NjE1NTQ3fDA&ixlib=rb-4.0.3&q=80&w=1080"
             alt="Amazon" class="thumbnail">
@@ -225,7 +225,7 @@
           </div>
         </div>
         <!-- Tour Card 3 -->
-        <div id="venice" class="tour-card">
+        <div id="venice" class="tour-card reveal-delay">
           <img
             src="https://images.unsplash.com/photo-1511135570219-bbad9a02f103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MjA4MjB8MHwxfHNlYXJjaHw5fHxWZW5pY2V8ZW58MHx8fHwxNzE5MjM1MzYyfDA&ixlib=rb-4.0.3&q=80&w=1080"
             alt="Italy" class="thumbnail">
@@ -271,7 +271,6 @@
   </div>
   <!-- Footer -->
   <footer></footer>
-  <script src="./assets/js/main.js"></script>
   <script>
     const paris = document.querySelector("#paris")
     paris.addEventListener("click", function () {
@@ -285,8 +284,9 @@
     venice.addEventListener("click", function () {
       window.location.href = "detail.html?id=27"
     })
-
-  </script>
+    </script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

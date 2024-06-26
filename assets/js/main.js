@@ -1,6 +1,6 @@
 // Footer
-const footer = document.querySelector("footer")
-if(footer){
+const footer = document.querySelector("footer");
+if (footer) {
   footer.innerHTML = `
     <div class="footer-container">
       <div class="footer-left">
@@ -45,103 +45,177 @@ if(footer){
     <div class="footer-bottom">
       <p>Copyright @ CMP-2024. All Rights Reserved.</p>
     </div>
-  `
+  `;
 }
 // End Footer
 
 // Scroll Event
-const scrollUpIcon = document.getElementById('scrollUpIcon');
-const scrollDownIcon = document.getElementById('scrollDownIcon');
+const scrollUpIcon = document.getElementById("scrollUpIcon");
+const scrollDownIcon = document.getElementById("scrollDownIcon");
 const scrollToPosition = window.innerHeight; // Vị trí cuộn theo pixel (ví dụ: 500px từ đầu trang)
 
 let isAtScrollDownPosition = false; // Biến cờ để theo dõi vị trí cuộn
-if(scrollDownIcon && scrollUpIcon){
-  window.addEventListener('scroll', () => {
+if (scrollDownIcon && scrollUpIcon) {
+  window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
-  
+
     if (scrollTop >= scrollToPosition) {
       isAtScrollDownPosition = true;
-      scrollUpIcon.style.display = 'block';
-      scrollDownIcon.style.display = 'none'; // Ẩn icon "mũi tên đi xuống" khi cuộn đến vị trí
+      scrollUpIcon.style.display = "block";
+      scrollDownIcon.style.display = "none"; // Ẩn icon "mũi tên đi xuống" khi cuộn đến vị trí
     } else {
       isAtScrollDownPosition = false;
-      scrollUpIcon.style.display = 'none';
-      scrollDownIcon.style.display = 'block';
+      scrollUpIcon.style.display = "none";
+      scrollDownIcon.style.display = "block";
     }
   });
-  
-  scrollUpIcon.addEventListener('click', () => {
-    if (isAtScrollDownPosition) { // Kiểm tra trước khi cuộn lên đầu
+
+  scrollUpIcon.addEventListener("click", () => {
+    if (isAtScrollDownPosition) {
+      // Kiểm tra trước khi cuộn lên đầu
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   });
-  
-  scrollDownIcon.addEventListener('click', () => {
+
+  scrollDownIcon.addEventListener("click", () => {
     window.scrollTo({
       top: scrollToPosition,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
-  
+
   // Ẩn icon "mũi tên đi lên" ban đầu
-  scrollUpIcon.style.display = 'none';
+  scrollUpIcon.style.display = "none";
 }
 // End Scroll Event
 
 // Form Submit
-const buttonSubmit = document.querySelector("button[type=submit]")
-if(buttonSubmit){
-  const formControl = document.querySelectorAll(".form-control[required]")
-  console.log(formControl)
-  const formControlArray = Array.from(formControl)
+const buttonSubmit = document.querySelector("button[type=submit]");
+if (buttonSubmit) {
+  const formControl = document.querySelectorAll(".form-control[required]");
+  console.log(formControl);
+  const formControlArray = Array.from(formControl);
   buttonSubmit.addEventListener("click", (e) => {
-    const checkValid = formControlArray.some(input => input.value == "")
-    const alertSuccess = document.querySelector(".alert-success")
-    const alertFail = document.querySelector(".alert-danger")
-    
-    if(checkValid){
-      alertSuccess.classList.add("d-none")
-      alertFail.classList.remove("d-none")
-    }else{
-      alertFail.classList.add("d-none")
-      alertSuccess.classList.remove("d-none")
-      formControlArray.forEach(input => input.value = "")
+    const checkValid = formControlArray.some((input) => input.value == "");
+    const alertSuccess = document.querySelector(".alert-success");
+    const alertFail = document.querySelector(".alert-danger");
 
-      e.preventDefault()
+    if (checkValid) {
+      alertSuccess.classList.add("d-none");
+      alertFail.classList.remove("d-none");
+    } else {
+      alertFail.classList.add("d-none");
+      alertSuccess.classList.remove("d-none");
+      formControlArray.forEach((input) => (input.value = ""));
+
+      e.preventDefault();
       setTimeout(() => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }, 4000);
     }
-  })
+  });
 }
 // End Form Submit
 
 // Popup Image
-const imgs = document.querySelector('img');
-const popup = document.getElementById('popup');
-const popupImg = document.getElementById('popup-img');
-const close = document.querySelector('.close');
+// const imgs = document.querySelector('img');
+// const popup = document.getElementById('popup');
+// const popupImg = document.getElementById('popup-img');
+// const close = document.querySelector('.close');
 
-console.log(imgs)
-img.onclick = function () {
-  popup.style.display = "block";
-  popupImg.src = this.src.replace("small-",
-  "large-"); // Đảm bảo bạn có ảnh lớn với tên file tương ứng
-}
+// // console.log(imgs)
+// img.onclick = function () {
+//   popup.style.display = "block";
+//   popupImg.src = this.src.replace("small-",
+//   "large-"); // Đảm bảo bạn có ảnh lớn với tên file tương ứng
+// }
 
-close.onclick = function () {
-  popup.style.display = "none";
-}
+// close.onclick = function () {
+//   popup.style.display = "none";
+// }
 
-window.onclick = function (event) {
-  if (event.target == popup) {
-      popup.style.display = "none";
-  }
-}
+// window.onclick = function (event) {
+//   if (event.target == popup) {
+//       popup.style.display = "none";
+//   }
+// }
 // End Popup Image
+
+// Scroll Reveal
+var slideRight = {
+  distance: "70%",
+  origin: "left",
+  easing: "ease",
+  duration: 1500,
+  opacity: 0
+};
+var slideLeft = {
+  distance: "70%",
+  origin: "right",
+  easing: "ease",
+  duration: 1500,
+  opacity: 0
+};
+var slideUp = {
+  distance: "70%",
+  origin: "bottom",
+  easing: "ease",
+  duration: 1500,
+  opacity: 0
+};
+var slideDown = {
+  distance: "50%",
+  origin: "top",
+  easing: "ease",
+  duration: 1500,
+  opacity: 0
+};
+
+var reveal = {
+  easing: "ease",
+  duration: 1500,
+  opacity: 0
+};
+
+const rightReveal = document.querySelectorAll(".slide-right");
+const leftReveal = document.querySelectorAll(".slide-left");
+const upReveal = document.querySelectorAll(".slide-up");
+const downReveal = document.querySelectorAll(".slide-down");
+const fadeReveal = document.querySelectorAll(".reveal");
+const revealDelay = document.querySelectorAll(".reveal-delay");
+const slideRightDelay = document.querySelectorAll(".slide-right-delay");
+
+
+ScrollReveal().reveal(rightReveal, slideRight);
+ScrollReveal().reveal(leftReveal, slideLeft);
+ScrollReveal().reveal(upReveal, slideUp);
+ScrollReveal().reveal(downReveal, slideDown);
+ScrollReveal().reveal(fadeReveal, reveal);
+
+revealDelay.forEach((image, index) => {
+  ScrollReveal().reveal(image, {
+    delay: index * 200,
+    easing: "ease",
+    duration: 1500,
+    opacity: 0
+  });
+});
+
+slideRightDelay.forEach((image, index) => {
+  ScrollReveal().reveal(image, {
+    delay: index * 100,
+    easing: "ease",
+    distance: "30%",
+    origin: "left",
+    duration: 1500,
+    opacity: 0
+  });
+});
+
+// End Scroll Reveal

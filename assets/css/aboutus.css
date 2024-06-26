@@ -62,9 +62,7 @@ a {
 .image-container img{
   transition: transform ease 0.3 ;
 }
-.image-container img:hover{
-  transform: scale(1.05);
-}
+
 /* Add styles for decorative lines using pseudo-elements */
 .image-container::before,
 .image-container::after {

@@ -244,13 +244,12 @@ a {
     padding: 20px;
     width: 235px;
     height: 315px;
-    position: relative;
     display: flex; /* Bật Flexbox */
     flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
     justify-content: center; /* Căn giữa theo chiều dọc */
     align-items: center; /* Căn giữa theo chiều ngang */
     transition: all .5s ease-in-out;
-    }
+  }
   
   .service-item img {
     width: 72px;
@@ -281,20 +280,22 @@ a {
   .main-service {
     width: 227px;
     height: 315px;
+    position: relative;
   }
   
-  .main-service .overlay {
+  .main-service .square {
+    position: absolute;
     top: 260px;
     left: -30px;
     width: 80px;
     height: 80px;
     background-color: #df6951;
     border-radius: 30px;
-    z-index: -1;
+    z-index: -2;
   }
   
   .service-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   /* fast and easy */
@@ -387,7 +388,7 @@ a {
   }
   
   .tour-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
