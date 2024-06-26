@@ -170,14 +170,7 @@ a {
     z-index: 2;
     display: block;
 }
-/* @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
+
 .partner{
     height: 150px;
     width: 100%;
