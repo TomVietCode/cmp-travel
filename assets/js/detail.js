@@ -104,31 +104,59 @@ document.addEventListener("DOMContentLoaded", async () => {
       `https://api.unsplash.com/search/photos?query=${query}&client_id=${accessKey}&per_page=9`
     );
     const data = await response.json();
-    const listImages = data.results
-    
+    const listImages = data.results;
+
     // console.log(listImages)
-    const gallery = document.querySelector(".gallery")
-    const galleryPictures = document.querySelector(".gallery-pictures")
-    
-    listImages.forEach(img => {
-      const col4 = document.createElement("div")
-      col4.classList.add("col-4", "mb-4")
+    const gallery = document.querySelector(".gallery");
+    const galleryPictures = document.querySelector(".gallery-pictures");
 
-      const innerImage = document.createElement("div")
-      innerImage.classList.add("inner-image")
+    listImages.forEach((img) => {
+      const col4 = document.createElement("div");
+      col4.classList.add("col-4", "mb-4");
 
-      const image = document.createElement("img")
-      image.src = `${img.urls.regular}`
+      const innerImage = document.createElement("div");
+      innerImage.classList.add("inner-image");
 
-      innerImage.appendChild(image)
-      col4.appendChild(innerImage)
-      galleryPictures.appendChild(col4)
-    })
+      const image = document.createElement("img");
+      image.classList.add("light-box");
+      image.src = `${img.urls.regular}`;
 
-    gallery.appendChild(galleryPictures)
+      innerImage.appendChild(image);
+      col4.appendChild(innerImage);
+      galleryPictures.appendChild(col4);
+    });
+
+    gallery.appendChild(galleryPictures);
     container.appendChild(gallery);
-
   } catch (error) {
-    console.error("Error fetching images from Unsplash:", error);
+    console.log(error);
   }
+
+  // Popup Image
+  const popup = document.querySelector("#popup");
+  const popupImg = document.querySelector("#popup-img");
+  const closeBtn = document.querySelector(".close");
+  const images = document.querySelectorAll(".light-box");
+
+  console.log(images);
+  if (images) {
+    images.forEach((image) => {
+      image.addEventListener("click", () => {
+        popup.style.display = "block";
+        popupImg.src = image.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target == popup) {
+        // console.log(e.target)
+        popup.style.display = "none";
+      }
+    });
+  }
+  // End Popup Image
 });

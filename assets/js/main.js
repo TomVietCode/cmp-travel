@@ -124,27 +124,31 @@ if (buttonSubmit) {
 // End Form Submit
 
 // Popup Image
-// const imgs = document.querySelector('img');
-// const popup = document.getElementById('popup');
-// const popupImg = document.getElementById('popup-img');
-// const close = document.querySelector('.close');
+const popup = document.querySelector("#popup");
+const popupImg = document.querySelector("#popup-img");
+const closeBtn = document.querySelector(".close");
+const images = document.querySelectorAll(".light-box");
 
-// // console.log(imgs)
-// img.onclick = function () {
-//   popup.style.display = "block";
-//   popupImg.src = this.src.replace("small-",
-//   "large-"); // Đảm bảo bạn có ảnh lớn với tên file tương ứng
-// }
-
-// close.onclick = function () {
-//   popup.style.display = "none";
-// }
-
-// window.onclick = function (event) {
-//   if (event.target == popup) {
-//       popup.style.display = "none";
-//   }
-// }
+console.log(images)
+if(images){
+  images.forEach(image => {
+    image.addEventListener("click", () => {
+      popup.style.display = "block"
+      popupImg.src = image.src
+    })
+  })
+  
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = 'none';
+  })
+  
+  window.addEventListener("click", (e) => {
+    if (e.target == popup) {
+      // console.log(e.target)
+      popup.style.display = 'none';
+    }
+  })
+}
 // End Popup Image
 
 // Scroll Reveal
@@ -219,3 +223,4 @@ slideRightDelay.forEach((image, index) => {
 });
 
 // End Scroll Reveal
+
