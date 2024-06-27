@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const climateImage = document.querySelector("#climate-img")
   const cultureImage = document.querySelector("#culture-img")
 
-  console.log(objectBlog.images[0])
+  // console.log(objectBlog.images[0])
 
   if(objectBlog){
     const locationName = objectBlog.title.split(" - ")[0]

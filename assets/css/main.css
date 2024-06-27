@@ -229,7 +229,25 @@ a {
   margin: auto;
 }
 
+.btn-back {
+  border: 1px solid #DF6951;
+  color: #DF6951;
+  padding: .4rem 4rem;
+  font-weight: 600;
+}
 
+.btn-back i {
+  color: #DF6951;
+}
+
+.btn-back:hover {
+  color: white;
+  background-color: #DF6951;
+}
+
+.btn-back:hover i {
+  color: white;
+}
 
 /* Footer */
 footer {

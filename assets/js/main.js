@@ -129,8 +129,9 @@ const popupImg = document.querySelector("#popup-img");
 const closeBtn = document.querySelector(".close");
 const images = document.querySelectorAll(".light-box");
 
-console.log(images)
-if(images){
+// console.log(images)
+if(images.length != 0){
+  console.log(images)
   images.forEach(image => {
     image.addEventListener("click", () => {
       popup.style.display = "block"

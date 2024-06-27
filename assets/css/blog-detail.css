@@ -37,5 +37,13 @@ img{
     object-fit: cover;
 }
 
+.btn-back{
+    border-radius: .25rem;
+}
+.btn-back i {
+    color: #DF6951;
+    margin-right: 10px;
+}
+
 
 

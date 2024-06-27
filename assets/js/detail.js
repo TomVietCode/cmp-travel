@@ -79,7 +79,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   imageZoom.classList.add("image-zoom");
 
   const image = document.createElement("img");
-  image.setAttribute("src", `${objectLocation.img}`);
+  image.classList.add("light-box");
+  image.src = `${objectLocation.img}`
   imageZoom.appendChild(image);
 
   col5.appendChild(imageZoom);
@@ -138,7 +139,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const closeBtn = document.querySelector(".close");
   const images = document.querySelectorAll(".light-box");
 
-  console.log(images);
+  // console.log(images);
   if (images) {
     images.forEach((image) => {
       image.addEventListener("click", () => {
